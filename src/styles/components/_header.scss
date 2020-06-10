@@ -1,0 +1,33 @@
+.header {
+
+    display: block;
+
+    &__title {
+        font-weight: 100;
+    }
+}
+
+.navbar {
+
+    display: block;
+
+    &__links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        display: inline-block;
+        margin: 0.7em 1em;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            border-bottom: 3px solid pink;
+        }
+    }
+}
