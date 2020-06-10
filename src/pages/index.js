@@ -1,6 +1,7 @@
 import React from "react"
 import '../styles/index.scss'
+import App from '../components/App'
 
 export default function Home() {
-  return <div className="test">Hello world!</div>
+  return <App />;
 }
