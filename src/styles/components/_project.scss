@@ -1,0 +1,77 @@
+.project {
+    width: 100%;
+    height: auto;
+    // box-sizing: border-box;
+    display: flex;
+    padding: 100px 0;
+
+    &__button {
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        // border: 2px solid black;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+        margin-right: 2rem;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        line-height: 1.5;
+
+        &:hover {
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
+        }
+
+        svg {
+            margin: 10px;
+            height: 28px;
+            width: auto;
+        }
+    }
+
+    &__tags_container {
+        display: block;
+        margin: 50px 0;
+        width: 80%;
+    }
+
+    &__button_container {
+        display: flex;
+    }
+
+    &__info_container {
+        width: 50%;
+    }
+
+
+    &__tag {
+        display: inline-block;
+        background-color: $pink;
+        width: fit-content;
+        padding: 8px 8px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.9);
+        border-radius: 4px;
+        margin: 10px 7px 0 0;
+    }
+
+    &__description {
+        width: 80%;
+        line-height: 2;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    &__image_container {
+        width: 50%;
+        display: flex;
+
+        & img {
+            margin: auto;
+        }
+    }
+
+    &__title {
+        font-size: 3.5rem;
+    }
+}

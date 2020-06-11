@@ -14,7 +14,7 @@ const App: React.FC = () => {
                 <Project
                     title="Moodify"
                     backgroundColor="white"
-                    technologies={["react", "javascript"]}
+                    technologies={["react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript", "react", "javascript",]}
                     image="https://via.placeholder.com/500"
                     githubLink="#"
                     demoLink="#"
