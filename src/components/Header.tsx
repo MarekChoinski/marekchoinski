@@ -27,12 +27,12 @@ const Header: React.FC = () => {
                 </ul>
                 <ul className="navbar__links">
                     <li className="navbar__item">
-                        <a className="navbar__link" href="#">
+                        <a className="navbar__link" href="https://github.com/marekchoinski">
                             github
                         </a>
                     </li>
                     <li className="navbar__item">
-                        <a className="navbar__link" href="#">
+                        <a className="navbar__link" href="https://pl.linkedin.com/in/marek-choi%C5%84ski-506ab5180">
                             linkedin
                         </a>
                     </li>

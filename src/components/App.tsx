@@ -5,7 +5,7 @@ const App: React.FC = () => {
 
 
     return (
-        <section>
+        <section className="home">
             <Header />
         </section>
 
