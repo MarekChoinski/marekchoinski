@@ -6,16 +6,21 @@
 
 
     &__container {
-        max-width: 1600px;
+        max-width: $desktop-size;
         margin: 0 auto;
         height: auto;
         box-sizing: border-box;
         display: flex;
 
 
-        @media screen and (max-width: 1600px) {
+        @media screen and (max-width: $desktop-size) {
             flex-direction: column-reverse;
             padding: 0 50px;
+        }
+
+        @media screen and (max-width: $mobile-size) {
+            flex-direction: column-reverse;
+            padding: 0 20px;
         }
     }
 
@@ -23,7 +28,7 @@
         .project__container {
             flex-direction: row-reverse;
 
-            @media screen and (max-width: 1600px) {
+            @media screen and (max-width: $desktop-size) {
                 flex-direction: column-reverse;
             }
         }
@@ -48,7 +53,7 @@
             background-color: white;
         }
 
-        @media screen and (max-width: 1600px) {
+        @media screen and (max-width: $desktop-size) {
             width: fit-content;
             margin-bottom: 20px;
         }
@@ -65,15 +70,19 @@
         margin: 35px 0 50px 0;
         width: 80%;
 
-        @media screen and (max-width: 1600px) {
+        @media screen and (max-width: $desktop-size) {
             width: 100%;
+        }
+
+        @media screen and (max-width: $mobile-size) {
+            margin: 30px 0;
         }
     }
 
     &__button_container {
         display: flex;
 
-        @media screen and (max-width: 1600px) {
+        @media screen and (max-width: $desktop-size) {
             flex-direction: column;
         }
     }
@@ -81,7 +90,7 @@
     &__info_container {
         width: 50%;
 
-        @media screen and (max-width: 1600px) {
+        @media screen and (max-width: $desktop-size) {
             width: 100%;
         }
     }
@@ -91,11 +100,15 @@
         display: inline-block;
         background-color: $pink;
         width: fit-content;
-        padding: 8px 8px;
+        padding: 8px;
         font-weight: bold;
         color: rgba(255, 255, 255, 0.9);
         border-radius: 4px;
         margin: 10px 7px 0 0;
+
+        @media screen and (max-width: $mobile-size) {
+            font-size: 0.8rem;
+        }
     }
 
     &__description {
@@ -104,8 +117,13 @@
         font-size: 1.2rem;
         margin: 0;
 
-        @media screen and (max-width: 1600px) {
+        @media screen and (max-width: $desktop-size) {
             width: 100%;
+        }
+
+        @media screen and (max-width: $mobile-size) {
+            font-size: 1rem;
+            line-height: 1.5;
         }
     }
 
@@ -117,12 +135,17 @@
             margin: auto;
         }
 
-        @media screen and (max-width: 1600px) {
+        @media screen and (max-width: $desktop-size) {
             width: 100%;
         }
     }
 
     &__title {
         font-size: 3.5rem;
+
+        @media screen and (max-width: $mobile-size) {
+            font-size: 3rem;
+            margin: 30px 0;
+        }
     }
 }

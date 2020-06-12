@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "./Header"
 import Project from "./Project"
+import Footer from "./Footer"
 
 const App: React.FC = () => {
 
@@ -64,6 +65,7 @@ const App: React.FC = () => {
                     mollis diam. Ut congue, magna ac hendrerit laoreet.
                 </Project>
             </section>
+            <Footer />
         </>
 
     );
