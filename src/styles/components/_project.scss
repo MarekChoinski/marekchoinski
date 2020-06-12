@@ -1,15 +1,40 @@
 .project {
     width: 100%;
     height: auto;
-    // box-sizing: border-box;
-    display: flex;
     padding: 100px 0;
+    // display: flex;
+
+
+    &__container {
+        max-width: 1600px;
+        margin: 0 auto;
+        height: auto;
+        box-sizing: border-box;
+        display: flex;
+
+
+        @media screen and (max-width: 1600px) {
+            flex-direction: column-reverse;
+            padding: 0 50px;
+        }
+    }
+
+    &:nth-child(2n+2) {
+        .project__container {
+            flex-direction: row-reverse;
+
+            @media screen and (max-width: 1600px) {
+                flex-direction: column-reverse;
+            }
+        }
+    }
 
     &__button {
         padding: 1rem 1.5rem;
         border-radius: 10px;
         // border: 2px solid black;
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+        background-color: rgba(255, 255, 255, 0.8);
         margin-right: 2rem;
         color: black;
         font-weight: bold;
@@ -20,10 +45,16 @@
 
         &:hover {
             box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
+            background-color: white;
+        }
+
+        @media screen and (max-width: 1600px) {
+            width: fit-content;
+            margin-bottom: 20px;
         }
 
         svg {
-            margin: 10px;
+            margin-right: 10px;
             height: 28px;
             width: auto;
         }
@@ -31,16 +62,28 @@
 
     &__tags_container {
         display: block;
-        margin: 50px 0;
+        margin: 35px 0 50px 0;
         width: 80%;
+
+        @media screen and (max-width: 1600px) {
+            width: 100%;
+        }
     }
 
     &__button_container {
         display: flex;
+
+        @media screen and (max-width: 1600px) {
+            flex-direction: column;
+        }
     }
 
     &__info_container {
         width: 50%;
+
+        @media screen and (max-width: 1600px) {
+            width: 100%;
+        }
     }
 
 
@@ -60,6 +103,10 @@
         line-height: 2;
         font-size: 1.2rem;
         margin: 0;
+
+        @media screen and (max-width: 1600px) {
+            width: 100%;
+        }
     }
 
     &__image_container {
@@ -68,6 +115,10 @@
 
         & img {
             margin: auto;
+        }
+
+        @media screen and (max-width: 1600px) {
+            width: 100%;
         }
     }
 

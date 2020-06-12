@@ -9,10 +9,12 @@ type Props = {
     children: React.ReactNode,
     title: string,
     backgroundColor: string,
+    textColor?: string,
     technologies: string[],
     image: string,
     githubLink?: string,
     demoLink?: string,
+    learnLink?: string,
 };
 
 const Project: React.FC<Props> = props => {
@@ -20,20 +22,23 @@ const Project: React.FC<Props> = props => {
     const { children,
         title,
         backgroundColor,
+        textColor,
         technologies,
         image,
         githubLink,
-        demoLink
+        demoLink,
+        learnLink,
     } = props;
 
     return (
-        <div className="project_container">
-            <section
-                className="project"
-                style={{
-                    backgroundColor: backgroundColor
-                }}
-            >
+        <section
+            className="project"
+            style={{
+                backgroundColor: backgroundColor,
+                color: textColor ? textColor : null,
+            }}
+        >
+            <div className="project__container">
                 <div
                     className="project__info_container"
                 >
@@ -74,6 +79,15 @@ const Project: React.FC<Props> = props => {
                                 <ShowDemo /> SHOW DEMO
                     </a>
                         }
+                        {
+                            learnLink &&
+                            <a
+                                className="project__button"
+                                href={learnLink}
+                                role="button">
+                                <ShowDemo /> LEARN MORE
+                    </a>
+                        }
                     </div>
                 </div>
                 <div
@@ -83,8 +97,8 @@ const Project: React.FC<Props> = props => {
                 </div>
 
 
-            </section>
-        </div>
+            </div>
+        </section>
 
     );
 }
