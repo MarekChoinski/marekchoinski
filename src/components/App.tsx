@@ -15,7 +15,7 @@ const App: React.FC = () => {
                 <Project
                     title="Moodify"
                     backgroundColor="white"
-                    technologies={["react", "javascript", "react", "javascript", "react", "javascript", "react", "react", "javascript", "react",]}
+                    technologies={["Typescript", "React", "Redux", "Styled-components", "IndexedDB", "REST API", "Jest", "Enzyme"]}
                     image="https://via.placeholder.com/500"
                     githubLink="#"
                     demoLink="#"
@@ -29,7 +29,7 @@ const App: React.FC = () => {
                     title="Consquare"
                     backgroundColor="black"
                     textColor="white"
-                    technologies={["react", "javascript", "react", "javascript", "react", "javascript", "react", "react", "javascript", "react",]}
+                    technologies={["Unity", "Django", "Blender", "Python", "Agile"]}
                     image="https://via.placeholder.com/700"
                     learnLink="#"
                 >
@@ -41,7 +41,7 @@ const App: React.FC = () => {
                 <Project
                     title="Postuj.pl"
                     backgroundColor="lightgray"
-                    technologies={["react", "javascript", "react", "javascript", "react", "javascript", "react", "react", "javascript", "react",]}
+                    technologies={["Typescript", "React", "Redux", "Firebase", "SCSS", "Bootstrap", "Context-API", "Jest", "Enzyme"]}
                     image="https://via.placeholder.com/700"
                     githubLink="#"
                     demoLink="#"
@@ -54,7 +54,7 @@ const App: React.FC = () => {
                 <Project
                     title="Real-time maze solver"
                     backgroundColor="white"
-                    technologies={["react", "javascript", "react", "javascript", "react", "javascript", "react", "react", "javascript", "react",]}
+                    technologies={["Open.cv", "OOP", "Babel", "SCSS", "Algorithms", "WebRTC"]}
                     image="https://via.placeholder.com/700"
                     githubLink="#"
                     demoLink="#"
