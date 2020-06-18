@@ -5,7 +5,7 @@ const Header: React.FC = () => {
     return (
         <header className="header">
             <h1 className="header__title">
-                My name <span>is Marek Choiński</span>
+                My name is <span className="header__surname">Marek Choiński</span>
             </h1>
             <nav className="navbar">
                 <ul className="navbar__links">
@@ -14,13 +14,13 @@ const Header: React.FC = () => {
                             projects
                         </a>
                     </li>
-                    <li className="navbar__item">
+                    {/* <li className="navbar__item">
                         <a className="navbar__link" href="#blog">
                             blog
                         </a>
-                    </li>
+                    </li> */}
                     <li className="navbar__item">
-                        <a className="navbar__link" href="#">
+                        <a className="navbar__link" href="https://drive.google.com/file/d/1vq5BvRoZtTjgWqn1voBft27JbUgQaO11oqoLBGb7vaA/view">
                             resume
                         </a>
                     </li>

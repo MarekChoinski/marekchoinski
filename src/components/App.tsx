@@ -33,10 +33,10 @@ const App: React.FC = () => {
                     image="https://via.placeholder.com/700"
                     learnLink="#"
                 >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut neque dui, hendrerit vel molestie eu, scelerisque ac leo.
-                    Pellentesque ultricies vulputate tortor nec vehicula. Sed ut
-                    mollis diam. Ut congue, magna ac hendrerit laoreet.
+                    GPS-based, procedurally structure generated PokemonGo-alike multiplayer
+                    mobile game using Unity and Django, glowed up with astonishingly magic graphic.
+                    Every model and UI was carefully crafted by me. Being under the wing of
+                    Innovative Projects by Nokia our team stood on the podium of their competition.
                 </Project>
                 <Project
                     title="Postuj.pl"
