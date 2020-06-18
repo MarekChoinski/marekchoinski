@@ -18,8 +18,8 @@ const App: React.FC = () => {
                     title="Moodify"
                     technologies={["Typescript", "React", "Redux", "Styled-components", "IndexedDB", "REST API", "Jest", "Enzyme"]}
                     image="https://via.placeholder.com/500"
-                    githubLink="#"
-                    demoLink="#"
+                    githubLink="https://github.com/MarekChoinski/Moodify"
+                    demoLink="https://moodify.marekchoinski.com/"
                 >
                     The Progressive Web App written in React adjusts song choice depending on user mood.
                     Eye-pleasant visual experience based on spotify REST API changes dynamically
@@ -40,7 +40,7 @@ const App: React.FC = () => {
                     }}
                     technologies={["Unity", "Django", "Blender", "Python", "Agile"]}
                     image={ConsquareImage}
-                    learnLink="#"
+                // learnLink="https://www.marekchoinski.com/consquare"
                 >
                     GPS-based, procedurally structure generated PokemonGo-alike multiplayer
                     mobile game using Unity and Django, glowed up with astonishingly magic graphic.
@@ -54,8 +54,8 @@ const App: React.FC = () => {
                     }}
                     technologies={["Typescript", "React", "Redux", "Firebase", "SCSS", "Bootstrap", "Context-API", "Jest", "Enzyme"]}
                     image="https://via.placeholder.com/700"
-                    githubLink="#"
-                    demoLink="#"
+                    githubLink="https://github.com/MarekChoinski/Postuj"
+                    demoLink="https://postuj.marekchoinski.com/"
                 >
                     Social community, where anyone can set up an account and start creating posts,
                     comment and follow other users. Frontend stuffed with React, Redux and Context API is powered safely with Firebase framework.
@@ -64,8 +64,8 @@ const App: React.FC = () => {
                     title="Real-time maze solver"
                     technologies={["Open.cv", "OOP", "Babel", "SCSS", "Algorithms", "WebRTC"]}
                     image="https://via.placeholder.com/700"
-                    githubLink="#"
-                    demoLink="#"
+                    githubLink="https://github.com/MarekChoinski/real-time-maze-solver"
+                    demoLink="https://mazesolver.marekchoinski.com/"
                 >
                     The Progressive Web App with real-time camera solves handwritten labyrinths using Opencv.js, WebRTC and breadth-first search of graph. Written carefully using OOP and tested with Jest.
                 </Project>
