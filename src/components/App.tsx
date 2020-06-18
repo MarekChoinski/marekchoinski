@@ -20,10 +20,10 @@ const App: React.FC = () => {
                     githubLink="#"
                     demoLink="#"
                 >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut neque dui, hendrerit vel molestie eu, scelerisque ac leo.
-                    Pellentesque ultricies vulputate tortor nec vehicula. Sed ut
-                    mollis diam. Ut congue, magna ac hendrerit laoreet.
+                    The Progressive Web App written in React adjusts song choice depending on user mood.
+                    Eye-pleasant visual experience based on spotify REST API changes dynamically
+                    application appearance according to vibrant color of album cover using Styled-components.
+                    Optimal work is assured by combining redux with IndexedDB.
                 </Project>
                 <Project
                     title="Consquare"
@@ -31,7 +31,7 @@ const App: React.FC = () => {
                     textColor="white"
                     technologies={["Unity", "Django", "Blender", "Python", "Agile"]}
                     image="https://via.placeholder.com/700"
-                    learnLink="#"
+                // learnLink="#"
                 >
                     GPS-based, procedurally structure generated PokemonGo-alike multiplayer
                     mobile game using Unity and Django, glowed up with astonishingly magic graphic.
@@ -46,10 +46,7 @@ const App: React.FC = () => {
                     githubLink="#"
                     demoLink="#"
                 >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut neque dui, hendrerit vel molestie eu, scelerisque ac leo.
-                    Pellentesque ultricies vulputate tortor nec vehicula. Sed ut
-                    mollis diam. Ut congue, magna ac hendrerit laoreet.
+                    Website where anyone can set up an account and start creating posts, comment and follow other users. Frontend stuffed with React, Redux and Context API is powered safely with Firebase framework.
                 </Project>
                 <Project
                     title="Real-time maze solver"
@@ -59,10 +56,7 @@ const App: React.FC = () => {
                     githubLink="#"
                     demoLink="#"
                 >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut neque dui, hendrerit vel molestie eu, scelerisque ac leo.
-                    Pellentesque ultricies vulputate tortor nec vehicula. Sed ut
-                    mollis diam. Ut congue, magna ac hendrerit laoreet.
+                    The Progressive Web App with real-time camera solves handwritten labyrinths using Opencv.js, WebRTC and breadth-first search of graph. Written carefully using OOP and tested with Jest.
                 </Project>
             </section>
             <Footer />
