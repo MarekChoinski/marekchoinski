@@ -3,6 +3,8 @@ import Header from "./Header"
 import Project from "./Project"
 import Footer from "./Footer"
 
+import ConsquareImage from "../assets/images/consquare.png";
+
 const App: React.FC = () => {
 
 
@@ -31,10 +33,13 @@ const App: React.FC = () => {
                         color: "white",
                     }}
                     headerStyle={{
-                        fontFamily: "OldLondon"
+                        fontFamily: "OldLondon",
+                        fontSize: "6rem",
+                        margin: "3rem 0",
+                        fontWeight: "normal",
                     }}
                     technologies={["Unity", "Django", "Blender", "Python", "Agile"]}
-                    image="https://via.placeholder.com/700"
+                    image={ConsquareImage}
                     learnLink="#"
                 >
                     GPS-based, procedurally structure generated PokemonGo-alike multiplayer
