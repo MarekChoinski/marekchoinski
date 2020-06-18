@@ -8,35 +8,37 @@ import ShowCode from '../assets/icons/showCode.svg';
 type Props = {
     children: React.ReactNode,
     title: string,
-    backgroundColor: string,
-    textColor?: string,
     technologies: string[],
     image: string,
     githubLink?: string,
     demoLink?: string,
     learnLink?: string,
+    projectStyle?: React.CSSProperties,
+    headerStyle?: React.CSSProperties,
 };
 
 const Project: React.FC<Props> = props => {
 
     const { children,
         title,
-        backgroundColor,
-        textColor,
         technologies,
         image,
         githubLink,
         demoLink,
         learnLink,
+        projectStyle,
+        headerStyle,
     } = props;
 
     return (
         <section
             className="project"
-            style={{
-                backgroundColor: backgroundColor,
-                color: textColor ? textColor : null,
-            }}
+            // style={{
+            //     backgroundColor: backgroundColor,
+            //     color: textColor ? textColor : null,
+            //     fontFamily: font ? font : null,
+            // }}
+            style={projectStyle}
         >
             <div className="project__container">
                 <div
@@ -44,6 +46,7 @@ const Project: React.FC<Props> = props => {
                 >
                     <h1
                         className="project__title"
+                        style={headerStyle}
                     >
                         {title}
                     </h1>

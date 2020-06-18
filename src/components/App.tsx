@@ -14,7 +14,6 @@ const App: React.FC = () => {
             <section className="all_projects_container" id="projects">
                 <Project
                     title="Moodify"
-                    backgroundColor="white"
                     technologies={["Typescript", "React", "Redux", "Styled-components", "IndexedDB", "REST API", "Jest", "Enzyme"]}
                     image="https://via.placeholder.com/500"
                     githubLink="#"
@@ -27,11 +26,16 @@ const App: React.FC = () => {
                 </Project>
                 <Project
                     title="Consquare"
-                    backgroundColor="black"
-                    textColor="white"
+                    projectStyle={{
+                        backgroundColor: "black",
+                        color: "white",
+                    }}
+                    headerStyle={{
+                        fontFamily: "OldLondon"
+                    }}
                     technologies={["Unity", "Django", "Blender", "Python", "Agile"]}
                     image="https://via.placeholder.com/700"
-                // learnLink="#"
+                    learnLink="#"
                 >
                     GPS-based, procedurally structure generated PokemonGo-alike multiplayer
                     mobile game using Unity and Django, glowed up with astonishingly magic graphic.
@@ -40,17 +44,19 @@ const App: React.FC = () => {
                 </Project>
                 <Project
                     title="Postuj.pl"
-                    backgroundColor="lightgray"
+                    projectStyle={{
+                        backgroundColor: "lightgray"
+                    }}
                     technologies={["Typescript", "React", "Redux", "Firebase", "SCSS", "Bootstrap", "Context-API", "Jest", "Enzyme"]}
                     image="https://via.placeholder.com/700"
                     githubLink="#"
                     demoLink="#"
                 >
-                    Website where anyone can set up an account and start creating posts, comment and follow other users. Frontend stuffed with React, Redux and Context API is powered safely with Firebase framework.
+                    Social community, where anyone can set up an account and start creating posts,
+                    comment and follow other users. Frontend stuffed with React, Redux and Context API is powered safely with Firebase framework.
                 </Project>
                 <Project
                     title="Real-time maze solver"
-                    backgroundColor="white"
                     technologies={["Open.cv", "OOP", "Babel", "SCSS", "Algorithms", "WebRTC"]}
                     image="https://via.placeholder.com/700"
                     githubLink="#"
