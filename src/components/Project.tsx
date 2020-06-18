@@ -1,7 +1,4 @@
-import React, { Children } from "react"
-import Header from "./Header"
-// import { ReactComponent as showDemo } from "../assets/icons/showDemo.svg";
-// import showDemo from "";
+import React from "react"
 import ShowDemo from '../assets/icons/showDemo.svg';
 import ShowCode from '../assets/icons/showCode.svg';
 
@@ -33,11 +30,6 @@ const Project: React.FC<Props> = props => {
     return (
         <section
             className="project"
-            // style={{
-            //     backgroundColor: backgroundColor,
-            //     color: textColor ? textColor : null,
-            //     fontFamily: font ? font : null,
-            // }}
             style={projectStyle}
         >
             <div className="project__container">
