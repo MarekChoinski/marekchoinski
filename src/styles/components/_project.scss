@@ -3,6 +3,7 @@
     height: auto;
     padding: 100px 0;
     // display: flex;
+    font-family: 'Rubik', sans-serif;
 
 
 
@@ -69,11 +70,12 @@
         background-color: rgba(255, 255, 255, 0.8);
         margin-right: 2rem;
         color: black;
-        font-weight: bold;
+        // font-weight: bold;
         text-decoration: none;
         display: flex;
         align-items: center;
         line-height: 1.5;
+        font-weight: 500;
 
         &:hover {
             box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
@@ -128,10 +130,11 @@
         background-color: $pink;
         width: fit-content;
         padding: 8px;
-        font-weight: bold;
+        font-weight: 500;
         color: rgba(255, 255, 255, 0.9);
         border-radius: 4px;
         margin: 10px 7px 0 0;
+        font-family: 'Rubik', sans-serif;
 
         @media screen and (max-width: $mobile-size) {
             font-size: 0.8rem;
@@ -168,6 +171,7 @@
     }
 
     &__title {
+        font-weight: 500;
         font-size: 3.5rem;
 
         @media screen and (max-width: $mobile-size) {
