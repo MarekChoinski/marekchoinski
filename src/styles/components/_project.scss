@@ -5,6 +5,7 @@
     // display: flex;
 
 
+
     &__container {
         max-width: $desktop-size;
         margin: 0 auto;
@@ -29,6 +30,33 @@
 
             @media screen and (max-width: $desktop-size) {
                 flex-direction: column-reverse;
+            }
+        }
+    }
+
+    &--postuj {
+        background-color: lightgray;
+    }
+
+    &--consquare {
+        background-color: black;
+        color: white;
+
+        .project__title {
+            margin: 2.5rem 0;
+            font-weight: normal;
+            font-family: OldLondon;
+
+            font-size: 5.5rem;
+
+            @media screen and (max-width: $mobile-size) {
+                // font-size: 3.5rem;
+            }
+        }
+
+        .project__info_container {
+            @media screen and (min-width: $desktop-size) {
+                margin-left: 200px;
             }
         }
     }
