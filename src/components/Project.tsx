@@ -22,7 +22,7 @@ const Project: React.FC<Props> = props => {
         githubLink,
         demoLink,
         learnLink,
-        additionalClassName,
+        additionalClassName="",
     } = props;
 
     return (
