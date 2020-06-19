@@ -4,12 +4,14 @@ import Project from "./Project"
 import Footer from "./Footer"
 
 import ConsquareImage from "../assets/images/consquare.png";
+import Head from "./Head";
 
 const App: React.FC = () => {
 
 
     return (
         <>
+            <Head />
             <section className="home">
                 <Header />
             </section>
@@ -20,6 +22,7 @@ const App: React.FC = () => {
                     image="https://via.placeholder.com/500"
                     githubLink="https://github.com/MarekChoinski/Moodify"
                     demoLink="https://moodify.marekchoinski.com/"
+                // additionalClassName="project--moodify"
                 >
                     The Progressive Web App written in React adjusts song choice depending on user mood.
                     Eye-pleasant visual experience based on spotify REST API changes dynamically
@@ -28,16 +31,7 @@ const App: React.FC = () => {
                 </Project>
                 <Project
                     title="Consquare"
-                    projectStyle={{
-                        backgroundColor: "black",
-                        color: "white",
-                    }}
-                    headerStyle={{
-                        fontFamily: "OldLondon",
-                        fontSize: "6rem",
-                        margin: "3rem 0",
-                        fontWeight: "normal",
-                    }}
+                    additionalClassName="project--consquare"
                     technologies={["Unity", "Django", "Blender", "Python", "Agile"]}
                     image={ConsquareImage}
                 // learnLink="https://www.marekchoinski.com/consquare"
@@ -49,9 +43,7 @@ const App: React.FC = () => {
                 </Project>
                 <Project
                     title="Postuj.pl"
-                    projectStyle={{
-                        backgroundColor: "lightgray"
-                    }}
+                    additionalClassName="project--postuj"
                     technologies={["Typescript", "React", "Redux", "Firebase", "SCSS", "Bootstrap", "Context-API", "Jest", "Enzyme"]}
                     image="https://via.placeholder.com/700"
                     githubLink="https://github.com/MarekChoinski/Postuj"
@@ -66,6 +58,7 @@ const App: React.FC = () => {
                     image="https://via.placeholder.com/700"
                     githubLink="https://github.com/MarekChoinski/real-time-maze-solver"
                     demoLink="https://mazesolver.marekchoinski.com/"
+                // additionalClassName="project--maze_solver"
                 >
                     The Progressive Web App with real-time camera solves handwritten labyrinths using Opencv.js, WebRTC and breadth-first search of graph. Written carefully using OOP and tested with Jest.
                 </Project>

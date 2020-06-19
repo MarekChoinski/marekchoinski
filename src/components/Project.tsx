@@ -10,8 +10,7 @@ type Props = {
     githubLink?: string,
     demoLink?: string,
     learnLink?: string,
-    projectStyle?: React.CSSProperties,
-    headerStyle?: React.CSSProperties,
+    additionalClassName?: string,
 };
 
 const Project: React.FC<Props> = props => {
@@ -23,14 +22,12 @@ const Project: React.FC<Props> = props => {
         githubLink,
         demoLink,
         learnLink,
-        projectStyle,
-        headerStyle,
+        additionalClassName,
     } = props;
 
     return (
         <section
-            className="project"
-            style={projectStyle}
+            className={`project ${additionalClassName}`}
         >
             <div className="project__container">
                 <div
@@ -38,7 +35,6 @@ const Project: React.FC<Props> = props => {
                 >
                     <h1
                         className="project__title"
-                        style={headerStyle}
                     >
                         {title}
                     </h1>
