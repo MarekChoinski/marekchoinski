@@ -1,6 +1,7 @@
 .home {
     height: 700px;
-    width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .all_projects_container {
@@ -8,5 +9,3 @@
     height: auto;
     box-sizing: border-box;
 }
-
-.project_container {}
