@@ -50,7 +50,7 @@ const App: React.FC = () => {
                     demoLink="https://postuj.marekchoinski.com/"
                 >
                     Social community, where anyone can set up an account and start creating posts,
-                    comment and follow other users. Frontend stuffed with React, Redux and Context API is powered safely with Firebase framework.
+                    comment and follow other users with interesting content. Typescript frontend stuffed with React, Redux and Context API is powered safely with Firebase framework.
                 </Project>
                 <Project
                     title="Real-time maze solver"
