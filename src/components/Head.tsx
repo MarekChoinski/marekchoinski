@@ -19,8 +19,6 @@ const Head: React.FC = () => {
             <meta property="og:description" content={description} />
             {/* <meta property="og:image" content={image} /> */}
         </Helmet>
-
-
     );
 }
 
