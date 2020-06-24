@@ -42,7 +42,7 @@ const App: React.FC = () => {
                     Innovative Projects by Nokia our team stood on the podium of their competition.
                 </Project>
                 <Project
-                    title="Postuj.pl"
+                    title="Postuj"
                     additionalClassName="project--postuj"
                     technologies={["Typescript", "React", "Redux", "Firebase", "SCSS", "Bootstrap", "Context-API", "Jest", "Enzyme"]}
                     image="https://via.placeholder.com/700"
