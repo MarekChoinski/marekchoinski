@@ -5,6 +5,9 @@ import Footer from "./Footer"
 
 import ConsquareImage from "../assets/images/consquare.png";
 import Head from "./Head";
+import PostujSlider from "./PostujSlider";
+
+const ConsquareShowcase = () => <img src={ConsquareImage} alt="Consquare showcase"/>;
 
 const App: React.FC = () => {
 
@@ -19,7 +22,7 @@ const App: React.FC = () => {
                 <Project
                     title="Moodify"
                     technologies={["Typescript", "React", "Redux", "Styled-components", "IndexedDB", "REST API", "Jest", "Enzyme"]}
-                    image="https://via.placeholder.com/500"
+                    // image="https://via.placeholder.com/500"
                     githubLink="https://github.com/MarekChoinski/Moodify"
                     demoLink="https://moodify.marekchoinski.com/"
                 // additionalClassName="project--moodify"
@@ -33,7 +36,7 @@ const App: React.FC = () => {
                     title="Consquare"
                     additionalClassName="project--consquare"
                     technologies={["Unity", "Django", "Blender", "Python", "Agile"]}
-                    image={ConsquareImage}
+                    showcase={<ConsquareShowcase/>}
                 // learnLink="https://www.marekchoinski.com/consquare"
                 >
                     GPS-based, procedurally structure generated PokemonGo-alike multiplayer
@@ -45,9 +48,9 @@ const App: React.FC = () => {
                     title="Postuj"
                     additionalClassName="project--postuj"
                     technologies={["Typescript", "React", "Redux", "Firebase", "SCSS", "Bootstrap", "Context-API", "Jest", "Enzyme"]}
-                    image="https://via.placeholder.com/700"
                     githubLink="https://github.com/MarekChoinski/Postuj"
                     demoLink="https://postuj.marekchoinski.com/"
+                    showcase={<PostujSlider/>}
                 >
                     Social community, where anyone can set up an account and start creating posts,
                     comment and follow other users with interesting content. Typescript frontend stuffed with React, Redux and Context API is powered safely with Firebase framework.
@@ -55,7 +58,7 @@ const App: React.FC = () => {
                 <Project
                     title="Real-time maze solver"
                     technologies={["Open.cv", "OOP", "Babel", "SCSS", "Algorithms", "WebRTC"]}
-                    image="https://via.placeholder.com/700"
+                    // image="https://via.placeholder.com/700"
                     githubLink="https://github.com/MarekChoinski/real-time-maze-solver"
                     demoLink="https://mazesolver.marekchoinski.com/"
                 // additionalClassName="project--maze_solver"

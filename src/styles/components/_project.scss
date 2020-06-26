@@ -36,7 +36,7 @@
     }
 
     &--postuj {
-        background-color: lightgray;
+        // background-color: lightgray;
     }
 
     &--consquare {
@@ -117,7 +117,7 @@
     }
 
     &__info_container {
-        width: 50%;
+        width: 35%;
 
         @media screen and (max-width: $desktop-size) {
             width: 100%;
@@ -158,7 +158,7 @@
     }
 
     &__image_container {
-        width: 50%;
+        width: 65%;
         display: flex;
 
         & img {

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ReactElement } from "react"
 import ShowDemo from '../assets/icons/showDemo.svg';
 import ShowCode from '../assets/icons/showCode.svg';
 
@@ -6,7 +6,7 @@ type Props = {
     children: React.ReactNode,
     title: string,
     technologies: string[],
-    image: string,
+    showcase?: React.ReactNode,
     githubLink?: string,
     demoLink?: string,
     learnLink?: string,
@@ -18,7 +18,7 @@ const Project: React.FC<Props> = props => {
     const { children,
         title,
         technologies,
-        image,
+        showcase,
         githubLink,
         demoLink,
         learnLink,
@@ -84,7 +84,9 @@ const Project: React.FC<Props> = props => {
                 <div
                     className="project__image_container"
                 >
-                    <img src={image} alt={`${title} visualisation`} />
+                    {showcase ||
+                <img src="https://via.placeholder.com/500" alt={`${title} visualisation`} />}
+                    {/* {showcase} */}
                 </div>
 
 
