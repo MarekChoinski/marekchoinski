@@ -45,7 +45,8 @@ const Project: React.FC<Props> = props => {
                     <div className="project__tags_container">
                         {
                             technologies.map(technology =>
-                                <div className="project__tag">
+                                <div className="project__tag"
+                                key={technology}>
                                     {technology}
                                 </div>
                             )

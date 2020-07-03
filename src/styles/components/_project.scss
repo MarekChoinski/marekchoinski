@@ -2,10 +2,7 @@
     width: 100%;
     height: auto;
     padding: 100px 0;
-    // display: flex;
     font-family: 'Rubik', sans-serif;
-
-
 
     &__container {
         max-width: $desktop-size;
@@ -13,7 +10,6 @@
         height: auto;
         box-sizing: border-box;
         display: flex;
-
 
         @media screen and (max-width: $desktop-size) {
             flex-direction: column-reverse;
@@ -49,44 +45,48 @@
             font-family: OldLondon;
 
             font-size: 5.5rem;
-
-            @media screen and (max-width: $mobile-size) {
+            
+            @media screen and (min-width: $mobile-size) {
                 // font-size: 3.5rem;
             }
         }
 
         .project__info_container {
-            @media screen and (min-width: $desktop-size) {
+            @media screen and (min-width: $big-size) {
                 margin-left: 200px;
             }
         }
     }
 
     &__button {
-        padding: 1rem 1.5rem;
+        padding: 0.5rem 1rem;
         border-radius: 10px;
-        // border: 2px solid black;
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
         background-color: rgba(255, 255, 255, 0.8);
         margin-right: 2rem;
         color: black;
-        // font-weight: bold;
         text-decoration: none;
         display: flex;
         align-items: center;
         line-height: 1.5;
         font-weight: 500;
-
+        font-size: 0.8em;
+        
         &:hover {
             box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
             background-color: white;
         }
-
+        
         @media screen and (max-width: $desktop-size) {
             width: fit-content;
             margin-bottom: 20px;
         }
-
+        
+        @media screen and (min-width: $big-size) {
+            font-size: 1rem;
+            padding: 1rem 1.5rem;
+        }
+        
         svg {
             margin-right: 10px;
             height: 28px;
@@ -111,9 +111,10 @@
     &__button_container {
         display: flex;
 
-        @media screen and (max-width: $desktop-size) {
-            flex-direction: column;
-        }
+        // @media screen and (max-width: $desktop-size) {
+        //     flex-direction: column;
+        // }
+        
     }
 
     &__info_container {
@@ -136,24 +137,29 @@
         margin: 10px 7px 0 0;
         font-family: 'Rubik', sans-serif;
 
-        @media screen and (max-width: $mobile-size) {
-            font-size: 0.8rem;
+        font-size: 0.8em;
+
+        @media screen and (min-width: $big-size) {
+            font-size: 1em;
         }
     }
 
     &__description {
         width: 80%;
         line-height: 2;
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin: 0;
-
+        
         @media screen and (max-width: $desktop-size) {
             width: 100%;
         }
-
+        
         @media screen and (max-width: $mobile-size) {
-            font-size: 1rem;
             line-height: 1.5;
+        }
+        
+        @media screen and (min-width: $big-size) {
+            font-size: 1.2rem;
         }
     }
 
