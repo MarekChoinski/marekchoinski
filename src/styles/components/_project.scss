@@ -1,13 +1,14 @@
 .project {
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding: 5vh 0;
     font-family: 'Rubik', sans-serif;
 
     &__container {
-        max-width: $desktop-size;
+        max-width: $big-size;
         margin: 0 auto;
         height: auto;
+        // min-height: 80%;
         box-sizing: border-box;
         display: flex;
 
@@ -16,11 +17,17 @@
             padding: 0 50px;
         }
 
+        @media screen and (min-width: $desktop-size) {
+            height: 65vh;
+        }
+
+
         @media screen and (max-width: $mobile-size) {
             padding: 0 20px;
         }
     }
 
+    // every odd section is reversed description with showcase
     &:nth-child(2n+2) {
         .project__container {
             flex-direction: row-reverse;
@@ -31,9 +38,9 @@
         }
     }
 
-    &--postuj {
-        // background-color: lightgray;
-    }
+    // &--postuj {
+    //     // background-color: lightgray;
+    // }
 
     &--consquare {
         background-color: black;
@@ -46,15 +53,51 @@
 
             font-size: 5.5rem;
             
-            @media screen and (min-width: $mobile-size) {
-                // font-size: 3.5rem;
-            }
+            // @media screen and (min-width: $mobile-size) {
+            //     // font-size: 3.5rem;
+            // }
         }
 
         .project__info_container {
             @media screen and (min-width: $big-size) {
                 margin-left: 200px;
             }
+        }
+    }
+
+    &__description {
+        // width: 80%;
+        line-height: 2;
+        font-size: 1rem;
+        margin: 0;
+        
+        @media screen and (max-width: $desktop-size) {
+            width: 100%;
+        }
+        
+        @media screen and (max-width: $mobile-size) {
+            line-height: 1.5;
+        }
+        
+        @media screen and (min-width: $big-size) {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__image_container {
+        width: 65%;
+        display: flex;
+        max-height: 100%;
+
+        & img {
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+
+        @media screen and (max-width: $desktop-size) {
+            width: 100%;
+            display: block;
         }
     }
 
@@ -144,39 +187,7 @@
         }
     }
 
-    &__description {
-        width: 80%;
-        line-height: 2;
-        font-size: 1rem;
-        margin: 0;
-        
-        @media screen and (max-width: $desktop-size) {
-            width: 100%;
-        }
-        
-        @media screen and (max-width: $mobile-size) {
-            line-height: 1.5;
-        }
-        
-        @media screen and (min-width: $big-size) {
-            font-size: 1.2rem;
-        }
-    }
-
-    &__image_container {
-        width: 65%;
-        display: flex;
-
-        & img {
-            max-width: 100%;
-            margin: auto;
-        }
-
-        @media screen and (max-width: $desktop-size) {
-            width: 100%;
-            display: block;
-        }
-    }
+    
 
     &__title {
         font-weight: 500;
