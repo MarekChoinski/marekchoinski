@@ -12,7 +12,7 @@ import PostujSlider from "./PostujSlider";
 const ConsquareShowcase = () => <img src={ConsquareImage} alt="Consquare showcase"/>;
 const MoodifyShowcase = () => 
 <div style={{position: "relative", width: "100%", height: "100%"}}>
-    <video autoPlay loop width="100%" height="100%">
+    <video autoPlay loop muted width="100%" height="100%">
         <source src={MoodifyVideo} type="video/mp4" />
     </video>
     <div className="shadow" style={{
@@ -25,18 +25,9 @@ const MoodifyShowcase = () =>
 </div>;
 
 const MazeShowcase = () => 
-<div style={{position: "relative", width: "100%", height: "100%"}}>
     <video autoPlay loop muted width="100%" height="100%">
         <source src={MazeVideo} type="video/mp4" />
-    </video>
-    <div className="shadow" style={{
-        position: "absolute",
-        width: "100%",
-        height: "100%",
-        border: "2px solid red",
-        top: "0",
-        left: "0",}}></div>
-</div>;
+    </video>;
 
 
 const App: React.FC = () => {
