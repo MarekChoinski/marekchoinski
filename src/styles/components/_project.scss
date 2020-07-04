@@ -6,7 +6,7 @@
     font-family: 'Rubik', sans-serif;
 
     @media screen and (min-width: $desktop-size) {
-        padding: 150px 100px;
+        padding: 150px 70px;
     }
     
     &__container {
@@ -22,7 +22,7 @@
         }
         
         @media screen and (min-width: $desktop-size) {
-            height: 65vh;
+            min-height: 65vh;
         }
 
         @media screen and (max-width: $mobile-size) {
@@ -41,6 +41,11 @@
         }
     }
 
+    // first project has no padding
+    &:first-child{
+        padding-top: 0;
+    }
+
     &--mazesolver {
         padding-top: 0;
         padding-bottom: 0;
@@ -56,6 +61,7 @@
     &--consquare {
         background-color: black;
         color: white;
+        padding: 10px 0;
 
         .project__title {
             margin: 2.5rem 0;
@@ -64,15 +70,19 @@
 
             font-size: 5.5rem;
             
-            // @media screen and (min-width: $mobile-size) {
-            //     // font-size: 3.5rem;
-            // }
+            @media screen and (max-width: $mobile-size) {
+                font-size: 4.5rem;
+            }
         }
 
         .project__info_container {
             @media screen and (min-width: $big-size) {
                 margin-left: 200px;
             }
+        }
+
+        img {
+            height: 80%;
         }
     }
 
@@ -86,7 +96,7 @@
         }
         
         @media screen and (max-width: $mobile-size) {
-            line-height: 1.5;
+            line-height: 1.7;
         }
         
         @media screen and (min-width: $big-size) {
@@ -181,7 +191,7 @@
         width: fit-content;
         padding: 8px;
         font-weight: 500;
-        color: rgba(255, 255, 255, 0.9);
+        color: white;
         border-radius: 4px;
         margin: 10px 7px 0 0;
         font-family: 'Rubik', sans-serif;

@@ -34,9 +34,9 @@ const App: React.FC = () => {
 
 
     return (
-        <>
+        <main>
             <Head />
-            <section className="home">
+            <section>
                 <Header />
             </section>
             <section className="all_projects_container" id="projects">
@@ -89,7 +89,7 @@ const App: React.FC = () => {
                 </Project>
             </section>
             <Footer />
-        </>
+        </main>
 
     );
 }
