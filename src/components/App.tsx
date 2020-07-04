@@ -67,18 +67,18 @@ const App: React.FC = () => {
                 </Project>
                 <Project
                     title="Postuj"
-                    additionalClassName="project--postuj"
                     technologies={["Typescript", "React", "Redux", "Firebase", "SCSS", "Bootstrap", "Context-API", "Jest", "Enzyme"]}
                     githubLink="https://github.com/MarekChoinski/Postuj"
                     demoLink="https://postuj.marekchoinski.com/"
                     showcase={<PostujSlider/>}
                     key="postuj"
-                >
+                    >
                     Social community, where anyone can set up an account and start creating posts,
                     comment and follow other users with interesting content. Typescript frontend stuffed with React, Redux and Context API is powered safely with Firebase framework.
                 </Project>
                 <Project
                     title="Real-time maze solver"
+                    additionalClassName="project--mazesolver"
                     technologies={["Open.cv", "OOP", "Babel", "SCSS", "Algorithms", "WebRTC"]}
                     showcase={<MazeShowcase />}
                     githubLink="https://github.com/MarekChoinski/real-time-maze-solver"

@@ -1,26 +1,29 @@
 .project {
     width: 100%;
     height: auto;
-    padding: 5vh 0;
+    padding: 100px 0px;
+    box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 
+    @media screen and (min-width: $desktop-size) {
+        padding: 150px 100px;
+    }
+    
     &__container {
         max-width: $big-size;
         margin: 0 auto;
         height: auto;
-        // min-height: 80%;
         box-sizing: border-box;
         display: flex;
-
+        
         @media screen and (max-width: $desktop-size) {
             flex-direction: column-reverse;
             padding: 0 50px;
         }
-
+        
         @media screen and (min-width: $desktop-size) {
             height: 65vh;
         }
-
 
         @media screen and (max-width: $mobile-size) {
             padding: 0 20px;
@@ -38,9 +41,17 @@
         }
     }
 
-    // &--postuj {
-    //     // background-color: lightgray;
-    // }
+    &--mazesolver {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .project__container {
+            
+            @media screen and (min-width: $desktop-size) {
+                height: 80vh;
+            }
+        }
+    }
 
     &--consquare {
         background-color: black;
@@ -66,7 +77,6 @@
     }
 
     &__description {
-        // width: 80%;
         line-height: 2;
         font-size: 1rem;
         margin: 0;
@@ -153,21 +163,17 @@
 
     &__button_container {
         display: flex;
-
-        // @media screen and (max-width: $desktop-size) {
-        //     flex-direction: column;
-        // }
-        
     }
 
     &__info_container {
         width: 35%;
+        padding: 0 50px;
 
         @media screen and (max-width: $desktop-size) {
             width: 100%;
+            padding: 0;
         }
     }
-
 
     &__tag {
         display: inline-block;
@@ -185,9 +191,7 @@
         @media screen and (min-width: $big-size) {
             font-size: 1em;
         }
-    }
-
-    
+    } 
 
     &__title {
         font-weight: 500;
