@@ -51,7 +51,7 @@ const App: React.FC = () => {
                     The Progressive Web App written in React adjusts song choice depending on user's mood.
                     Eye-pleasant visual experience based on spotify REST API changes the
                     application's appearance according to vibrant color of the album cover using Styled-components.
-                    Optimal work is assured by combining redux with IndexedDB.
+                    API usage is optimised by combining redux with IndexedDB caching.
                 </Project>
                 <Project
                     title="Consquare"
