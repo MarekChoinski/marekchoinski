@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef, useEffect } from "react"
 import Header from "./Header"
 import Project from "./Project"
 import Footer from "./Footer"
@@ -12,22 +12,34 @@ import PostujSlider from "./PostujSlider";
 const ConsquareShowcase = () => <img src={ConsquareImage} alt="Consquare showcase"/>;
 const MoodifyShowcase = () => 
 <div style={{position: "relative", width: "100%", height: "100%"}}>
-    <video autoPlay loop muted width="100%" height="100%">
+    <video autoPlay loop muted playsInline width="100%" height="100%" >
         <source src={MoodifyVideo} type="video/mp4" />
     </video>
-    <div className="shadow" style={{
+    {/* <div className="shadow" style={{
         position: "absolute",
         width: "100%",
         height: "100%",
         boxShadow: "rgb(255, 255, 255) 0px -11px 10px 0px inset",
         top: "0",
-        left: "0",}}></div>
+        left: "0",}}></div> */}
 </div>;
 
-const MazeShowcase = () => 
-    <video autoPlay loop muted width="100%" height="100%">
-        <source src={MazeVideo} type="video/mp4" />
-    </video>;
+const MazeShowcase = () => {
+
+    // const videoRef = useRef();
+
+    // useEffect(() => {
+    //     videoRef.current.play();
+        
+    //     return () => clearInterval(intervalRef.current);
+    //   });
+
+    return (
+        <video autoPlay loop muted playsInline width="100%" height="100%">
+            <source src={MazeVideo} type="video/mp4" />
+        </video>
+    );
+};
 
 
 const App: React.FC = () => {
