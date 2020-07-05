@@ -61,7 +61,11 @@
     &--consquare {
         background-color: black;
         color: white;
-        padding: 10px 0;
+        padding: 0;
+
+        @media screen and (max-width: $mobile-size) {
+            padding: 100px 0px;
+        }
 
         .project__title {
             margin: 2.5rem 0;
@@ -82,7 +86,10 @@
         }
 
         img {
-            height: 80%;
+            
+            @media screen and (min-width: $desktop-size) {
+                height: 70%;
+            }
         }
     }
 
@@ -176,6 +183,9 @@
     }
 
     &__info_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 35%;
         padding: 0 50px;
 

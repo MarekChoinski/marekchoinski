@@ -4,8 +4,9 @@ import React from "react"
 const Header: React.FC = () => {
     return (
         <header className="header">
-            <h1 className="header__title">
-                My name is <span className="header__surname">Marek Choiński</span>
+            <h1 className="introduction">
+                <span className="introduction__greeter">My name is </span>
+                <span className="introduction__name">Marek Choiński</span>
             </h1>
             <nav className="navbar">
                 <ul className="navbar__links">

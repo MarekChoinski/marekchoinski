@@ -1,12 +1,5 @@
 .header {
-
-    // position: fixed;
-    // position: relative;
-    // left: 50%;
-    // top: 50%;
-    // transform: translate(-50%, -50%);
     padding: 100px 0;
-
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -15,18 +8,44 @@
     margin: 0;
     font-family: 'Rubik', sans-serif;
 
-    &__title {
-        display: block;
-        // font-weight: bold;
-        font-weight: 500;
-        box-sizing: border-box;
-        font-size: 2.5rem;
+    @media screen and (max-width: $mobile_size) {
+        padding-top: 0;
     }
 
-    &__surname {
+}
+
+.introduction {
+    display: block;
+    font-weight: 500;
+    box-sizing: border-box;
+    font-size: 2.5rem;
+
+    @media screen and (max-width: $mobile_size) {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        margin-left: 20px;
+        // justify-self: flex-start;
+    }
+
+    span {
+        @media screen and (max-width: $mobile_size) {
+            display: block;
+        }
+    }
+
+    &__greeter{
+        font-size: 2rem;
+        @media screen and (max-width: $mobile_size) {
+            display: none;
+        }
+    }
+   
+    &__name {
         color: $pink;
     }
 }
+
 
 .navbar {
 
