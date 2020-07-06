@@ -24,22 +24,10 @@ const MoodifyShowcase = () =>
         left: "0",}}></div> */}
 </div>;
 
-const MazeShowcase = () => {
-
-    // const videoRef = useRef();
-
-    // useEffect(() => {
-    //     videoRef.current.play();
-        
-    //     return () => clearInterval(intervalRef.current);
-    //   });
-
-    return (
+const MazeShowcase = () => 
         <video autoPlay loop muted playsInline width="100%" height="100%">
             <source src={MazeVideo} type="video/mp4" />
-        </video>
-    );
-};
+        </video>;
 
 
 const App: React.FC = () => {
