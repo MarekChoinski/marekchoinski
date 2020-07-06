@@ -1,10 +1,10 @@
 <div align="center">
-![logo](https://i.imgur.com/sNoPU6F.png)
+  <img src="https://i.imgur.com/sNoPU6F.png" width="350" title="logo">
 </div>
 
-<div align="center">
-  <h1>Developing</h1>
-</div>
+
+## Developing
+
 
 ### Installation
 
