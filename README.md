@@ -1,5 +1,6 @@
 <div align="center">
-![screenshot](https://i.imgur.com/sNoPU6F.png)
+![logo](https://i.imgur.com/sNoPU6F.png)
+</div>
 
 <div align="center">
   <h1>Developing</h1>
