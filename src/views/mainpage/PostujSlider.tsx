@@ -1,7 +1,7 @@
 import React from "react"
-import PostujLight from "../assets/images/postuj_light.jpg";
-import PostujBlue from "../assets/images/postuj_blue.jpg";
-import PostujDark from "../assets/images/postuj_dark.jpg";
+import PostujLight from "../../assets/images/postuj_light.jpg";
+import PostujBlue from "../../assets/images/postuj_blue.jpg";
+import PostujDark from "../../assets/images/postuj_dark.jpg";
 
 const PostujSlider: React.FC = () => {
     return (

@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet";
 
-import { head } from '../constans/head';
+import { head } from '../../constans/head';
 
 const Head: React.FC = () => {
 

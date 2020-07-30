@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react"
-import ShowDemo from '../assets/icons/showDemo.svg';
-import ShowCode from '../assets/icons/showCode.svg';
+import ShowDemo from '../../assets/icons/showDemo.svg';
+import ShowCode from '../../assets/icons/showCode.svg';
 
 type Props = {
     children: React.ReactNode,
@@ -77,7 +77,7 @@ const Project: React.FC<Props> = props => {
                                 className="project__button"
                                 href={learnLink}
                                 role="button">
-                                <ShowDemo /> LEARN MORE
+                                {/* <ShowDemo /> LEARN MORE */}
                     </a>
                         }
                     </div>
@@ -85,9 +85,9 @@ const Project: React.FC<Props> = props => {
                 <div
                     className="project__image_container"
                 >
-                    {showcase ||
-                <img src="https://via.placeholder.com/500" alt={`${title} visualisation`} />}
-                    {/* {showcase} */}
+                    {showcase || <img src="https://via.placeholder.com/500" alt={`${title} visualisation`} />}
+
+                    
                 </div>
 
 

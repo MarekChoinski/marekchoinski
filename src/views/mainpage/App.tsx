@@ -1,11 +1,11 @@
 import React, { useRef, useEffect } from "react"
-import Header from "./Header"
+import Header from "../shared/Header"
 import Project from "./Project"
 import Footer from "./Footer"
 
-import ConsquareImage from "../assets/images/consquare.jpg";
-import MoodifyVideo from "../static/moodify.mp4";
-import MazeVideo from "../static/mazesolver.mp4";
+import ConsquareImage from "../../assets/images/consquare.jpg";
+import MoodifyVideo from "../../static/moodify.mp4";
+import MazeVideo from "../../static/mazesolver.mp4";
 import Head from "./Head";
 import PostujSlider from "./PostujSlider";
 
@@ -15,13 +15,6 @@ const MoodifyShowcase = () =>
     <video autoPlay loop muted playsInline width="100%" height="100%" >
         <source src={MoodifyVideo} type="video/mp4" />
     </video>
-    {/* <div className="shadow" style={{
-        position: "absolute",
-        width: "100%",
-        height: "100%",
-        boxShadow: "rgb(255, 255, 255) 0px -11px 10px 0px inset",
-        top: "0",
-        left: "0",}}></div> */}
 </div>;
 
 const MazeShowcase = () => 
@@ -36,9 +29,7 @@ const App: React.FC = () => {
     return (
         <main>
             <Head />
-            <section>
-                <Header />
-            </section>
+            <Header />
             <section className="all_projects_container" id="projects">
                 <Project
                     title="Moodify"
@@ -48,10 +39,10 @@ const App: React.FC = () => {
                     showcase={<MoodifyShowcase />}
                     key="moodify"
                 >
-                    The Progressive Web App written in React adjusts song choice depending on user mood.
-                    Eye-pleasant visual experience based on spotify REST API changes dynamically
-                    application appearance according to vibrant color of album cover using Styled-components.
-                    Optimal work is assured by combining redux with IndexedDB.
+                    The Progressive Web App written in React adjusts song choice depending on user's mood.
+                    Eye-pleasant visual experience based on spotify REST API changes the
+                    application's appearance according to vibrant color of the album cover using Styled-components.
+                    API usage is optimised by combining redux with IndexedDB caching.
                 </Project>
                 <Project
                     title="Consquare"
@@ -60,10 +51,10 @@ const App: React.FC = () => {
                     showcase={<ConsquareShowcase/>}
                     key="consquare"
                 >
-                    GPS-based, procedurally structure generated PokemonGo-alike multiplayer
-                    mobile game using Unity and Django, glowed up with astonishingly magic graphic.
+                    GPS-based, procedurally structure generated, PokemonGo-alike multiplayer
+                    mobile game, using Unity and Django, glowed up with astonishingly magic graphics.
                     Every model and UI was carefully crafted by me. Being under the wing of
-                    Innovative Projects by Nokia our team stood on the podium of their competition.
+                    Innovative Projects by Nokia, our team stood on the podium of their competition.
                 </Project>
                 <Project
                     title="Postuj"
@@ -74,7 +65,8 @@ const App: React.FC = () => {
                     key="postuj"
                     >
                     Social community, where anyone can set up an account and start creating posts,
-                    comment and follow other users with interesting content. Typescript frontend stuffed with React, Redux and Context API is powered safely with Firebase framework.
+                    comment and follow other users with interesting content.
+                    Typescript frontend stuffed with React, Redux and Context API is powered safely with the Firebase framework.
                 </Project>
                 <Project
                     title="Real-time maze solver"
@@ -85,7 +77,8 @@ const App: React.FC = () => {
                     demoLink="https://mazesolver.marekchoinski.com/"
                     key="mazesolver"
                 >
-                    The Progressive Web App with real-time camera solves handwritten labyrinths using Opencv.js, WebRTC and breadth-first search of graph. Written carefully using OOP and tested with Jest.
+                    The Progressive Web App with real-time camera solves handwritten labyrinths using Opencv.js,
+                    WebRTC and breadth-first search of the graph. Written carefully using OOP and tested with Jest.
                 </Project>
             </section>
             <Footer />
