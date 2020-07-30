@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react"
 import Header from "../shared/Header"
-import Project from "./Project"
+import Project from "../shared/Project"
 import Footer from "./Footer"
 
 import ConsquareImage from "../../assets/images/consquare.jpg";
