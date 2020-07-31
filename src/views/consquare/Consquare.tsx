@@ -12,7 +12,7 @@ const Consquare: React.FC = () => {
     return (
         <main>
             <Header />
-            
+
             <Hero />
 
             <Project
