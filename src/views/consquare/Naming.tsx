@@ -25,9 +25,7 @@ const Consquare: React.FC = () => {
                     Innovative Projects by Nokia, our team stood on the podium of their competition.
                 </Project>
 
-                <section>
-
-                </section>
+                
         </main>
     );
 }
