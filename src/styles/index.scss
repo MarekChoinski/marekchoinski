@@ -2,7 +2,6 @@
 @import "globals";
 @import "layout";
 
-@import "components/header";
-@import "components/footer";
-@import "components/project";
-@import "components/slider";
+@import "views/shared/index.scss";
+@import "views/mainpage/index.scss";
+@import "views/consquare/index.scss";
