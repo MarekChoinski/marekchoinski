@@ -3,15 +3,15 @@ import React from "react"
 const Hero: React.FC = () => {
 
     return (
-            <header>
-                <h1>
+            <header className="hero-consquare">
+                <h1 className="hero-consquare__title">
                     Consquare
                 </h1>
-                <div className="subtitle">
-                    <span className="pronunciation">
-                        (/ˈkɑːsŋkɚ/)
+                <div className="hero-consquare__subtitle">
+                    <span  className="hero-consquare__pronunciation">
+                        (/ˈkɑːsŋkɚ/) - 
                     </span>
-                    - conquest of square
+                    &nbsp;conquest of square
                 </div> 
             </header>
     );
