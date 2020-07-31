@@ -4,6 +4,7 @@ import Header from "../shared/Header"
 import Project from "../shared/Project";
 
 import ConsquareImage from "../../assets/images/consquare.jpg";
+import Hero from "./Hero";
 const ConsquareShowcase = () => <img src={ConsquareImage} alt="Consquare showcase"/>;
 
 const Consquare: React.FC = () => {
@@ -11,6 +12,8 @@ const Consquare: React.FC = () => {
     return (
         <main>
             <Header />
+            
+            <Hero />
 
             <Project
                     title="Consquare"
@@ -25,9 +28,6 @@ const Consquare: React.FC = () => {
                     Innovative Projects by Nokia, our team stood on the podium of their competition.
                 </Project>
 
-                <section>
-
-                </section>
         </main>
     );
 }
