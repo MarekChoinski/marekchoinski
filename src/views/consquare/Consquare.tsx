@@ -7,14 +7,28 @@ import TwoColumnGrid from "../shared/TwoColumnGrid";
 import ConsquareImage from "../../assets/images/consquare.jpg";
 import InnovativeProjectImage from "../../assets/images/consquare/innovative.png";
 import WizardImage from "../../assets/images/consquare/wizard.jpg";
+import LogosImage from "../../assets/images/consquare/logos.png";
+import ComingSoonImage from "../../assets/images/consquare/coming_soon.png";
 import BlueOreVideo from "../../static/consquare/blue_ore.mp4";
+import MineVideo from "../../static/consquare/mine.mp4";
 
-const ConsquareShowcase = () => <img src={ConsquareImage} alt="Consquare showcase" />;
-const InnovativeProjectShowcase = () => <img src={InnovativeProjectImage} alt="Innovative projects logo" />;
 const BlueOreShowcase = () =>
     <video autoPlay loop muted playsInline width="100%" height="100%">
         <source src={BlueOreVideo} type="video/mp4" />
     </video>;
+const MineShowcase = () =>
+    <div
+        style={{
+            width: "100%",
+            textAlign: "center",
+        }}
+    >
+        <video
+            className="mineshowcase"
+            autoPlay loop muted playsInline width="100%" height="100%">
+            <source src={MineVideo} type="video/mp4" />
+        </video>
+    </div>;
 
 const Consquare: React.FC = () => {
 
@@ -28,7 +42,7 @@ const Consquare: React.FC = () => {
                 title="Consquare"
                 additionalClassName="project--consquare"
                 technologies={["Unity", "Django", "Blender", "Python", "Agile"]}
-                showcase={<ConsquareShowcase />}
+                showcase={<img src={ConsquareImage} alt="Consquare showcase" />}
                 key="consquare"
             >
                 GPS-based, procedurally structure generated, PokemonGo-alike multiplayer
@@ -40,7 +54,7 @@ const Consquare: React.FC = () => {
 
             <TwoColumnGrid
                 title="Master-winning finish"
-                showcase={<InnovativeProjectShowcase />}
+                showcase={<img src={InnovativeProjectImage} alt="Innovative projects logo" />}
                 additionalClassName="twoColumnGrid--innovativeProject"
                 key="innovativeProject"
             >
@@ -51,22 +65,8 @@ const Consquare: React.FC = () => {
                 gaining valuable work experience in the team and great beginning of our game development.
             </TwoColumnGrid>
 
-            <div
-                style={{
-                    textAlign: "center",
-                    width: "100%",
-                    margin: "150px 0",
-                }}
-            >
-                <img
-                    src={WizardImage}
-                    alt="Consquare showcase"
-                    style={{
-                        maxWidth: "100%",
-                    }}
-                />
 
-            </div>
+            <MineShowcase />
 
 
             <TwoColumnGrid
@@ -82,6 +82,24 @@ const Consquare: React.FC = () => {
                 was designed carefully in Photoshop. My role in the project was not only limited to the
                 artistic side - I participate developing frontend for game in Unity connected with backend in Django.
             </TwoColumnGrid>
+
+            <img
+                src={WizardImage}
+                alt="Wizard"
+                className="singleImageSection"
+            />
+
+            <img
+                src={LogosImage}
+                alt="Logos of technologies used in project"
+                className="singleImageSection singleImageSection--logos"
+            />
+
+            <img
+                src={ComingSoonImage}
+                alt="Coming soon"
+                className="singleImageSection singleImageSection--comingSoon"
+            />
 
         </main>
     );
