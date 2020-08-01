@@ -9,18 +9,18 @@ import MazeVideo from "../../static/mazesolver.mp4";
 import Head from "./Head";
 import PostujSlider from "./PostujSlider";
 
-const ConsquareShowcase = () => <img src={ConsquareImage} alt="Consquare showcase"/>;
-const MoodifyShowcase = () => 
-<div style={{position: "relative", width: "100%", height: "100%"}}>
-    <video autoPlay loop muted playsInline width="100%" height="100%" >
-        <source src={MoodifyVideo} type="video/mp4" />
-    </video>
-</div>;
+const ConsquareShowcase = () => <img src={ConsquareImage} alt="Consquare showcase" />;
+const MoodifyShowcase = () =>
+    <div style={{ position: "relative", width: "100%", height: "100%" }}>
+        <video autoPlay loop muted playsInline width="100%" height="100%" >
+            <source src={MoodifyVideo} type="video/mp4" />
+        </video>
+    </div>;
 
-const MazeShowcase = () => 
-        <video autoPlay loop muted playsInline width="100%" height="100%">
-            <source src={MazeVideo} type="video/mp4" />
-        </video>;
+const MazeShowcase = () =>
+    <video autoPlay loop muted playsInline width="100%" height="100%">
+        <source src={MazeVideo} type="video/mp4" />
+    </video>;
 
 
 const App: React.FC = () => {
@@ -48,7 +48,7 @@ const App: React.FC = () => {
                     title="Consquare"
                     additionalClassName="project--consquare"
                     technologies={["Unity", "Django", "Blender", "Python", "Agile"]}
-                    showcase={<ConsquareShowcase/>}
+                    showcase={<ConsquareShowcase />}
                     key="consquare"
                 >
                     GPS-based, procedurally structure generated, PokemonGo-alike multiplayer
@@ -61,9 +61,9 @@ const App: React.FC = () => {
                     technologies={["Typescript", "React", "Redux", "Firebase", "SCSS", "Bootstrap", "Context-API", "Jest", "Enzyme"]}
                     githubLink="https://github.com/MarekChoinski/Postuj"
                     demoLink="https://postuj.marekchoinski.com/"
-                    showcase={<PostujSlider/>}
+                    showcase={<PostujSlider />}
                     key="postuj"
-                    >
+                >
                     Social community, where anyone can set up an account and start creating posts,
                     comment and follow other users with interesting content.
                     Typescript frontend stuffed with React, Redux and Context API is powered safely with the Firebase framework.

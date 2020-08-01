@@ -9,11 +9,11 @@ type Props = {
 
 const TwoColumnGrid: React.FC<Props> = props => {
 
-    const { 
+    const {
         children,
         title,
         showcase,
-        additionalClassName="",
+        additionalClassName = "",
     } = props;
 
     return (
@@ -34,13 +34,13 @@ const TwoColumnGrid: React.FC<Props> = props => {
                         {children}
                     </p>
                 </div>
-                    
+
                 <div
                     className="twoColumnGrid__showcase"
                 >
                     {showcase || <img src="https://via.placeholder.com/500" alt={`${title} visualisation`} />}
 
-                    
+
                 </div>
 
 

@@ -8,19 +8,19 @@
     @media screen and (min-width: $desktop-size) {
         padding: 150px 70px;
     }
-    
+
     &__container {
         max-width: $big-size;
         margin: 0 auto;
         height: auto;
         box-sizing: border-box;
         display: flex;
-        
+
         @media screen and (max-width: $desktop-size) {
             flex-direction: column-reverse;
             padding: 0 50px;
         }
-        
+
         @media screen and (min-width: $desktop-size) {
             min-height: 65vh;
         }
@@ -42,7 +42,7 @@
     }
 
     // first project has no padding
-    &:first-child{
+    &:first-child {
         padding-top: 0;
     }
 
@@ -51,7 +51,7 @@
         padding-bottom: 0;
 
         .project__container {
-            
+
             @media screen and (min-width: $desktop-size) {
                 height: 80vh;
             }
@@ -73,7 +73,7 @@
             font-family: OldLondon;
 
             font-size: 5.5rem;
-            
+
             @media screen and (max-width: $mobile-size) {
                 font-size: 4.5rem;
             }
@@ -86,7 +86,7 @@
         }
 
         img {
-            
+
             @media screen and (min-width: $desktop-size) {
                 height: 70%;
             }
@@ -97,15 +97,15 @@
         line-height: 2;
         font-size: 1rem;
         margin: 0;
-        
+
         @media screen and (max-width: $desktop-size) {
             width: 100%;
         }
-        
+
         @media screen and (max-width: $mobile-size) {
             line-height: 1.7;
         }
-        
+
         @media screen and (min-width: $big-size) {
             font-size: 1.2rem;
         }
@@ -141,22 +141,22 @@
         line-height: 1.5;
         font-weight: 500;
         font-size: 0.8em;
-        
+
         &:hover {
             box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
             background-color: white;
         }
-        
+
         @media screen and (max-width: $desktop-size) {
             width: fit-content;
             margin-bottom: 20px;
         }
-        
+
         @media screen and (min-width: $big-size) {
             font-size: 1rem;
             padding: 1rem 1.5rem;
         }
-        
+
         svg {
             margin-right: 10px;
             height: 28px;
@@ -211,7 +211,7 @@
         @media screen and (min-width: $big-size) {
             font-size: 1em;
         }
-    } 
+    }
 
     &__title {
         font-weight: 500;

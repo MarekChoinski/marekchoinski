@@ -32,12 +32,12 @@
         }
     }
 
-    &__greeter{
+    &__greeter {
         @media screen and (max-width: $mobile_size) {
             font-size: 2rem;
         }
     }
-   
+
     &__name {
         color: $pink;
     }

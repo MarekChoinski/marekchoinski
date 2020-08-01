@@ -1,4 +1,4 @@
-.hero-consquare{
+.hero-consquare {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,29 +6,31 @@
     // font-weight: bold;
     font-family: OldLondon;
 
-    
+
     &__title {
         font-size: 11rem;
         margin: 2rem 0;
-        
+
         /* Disable poor font smoothing on firefox macOs */
         -moz-osx-font-smoothing: grayscale;
 
         /* Background texture */
-        background-image: url('../assets/images/consquare/gold_texture.jpg'); /* Change URL to texture file name */
+        background-image: url('../assets/images/consquare/gold_texture.jpg');
+        /* Change URL to texture file name */
         background-repeat: repeat;
         background-position: center center;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
-    &__subtitle{
+    &__subtitle {
         font-size: 3rem;
         color: #ababab;
     }
-    &__pronunciation{
+
+    &__pronunciation {
         font-size: 2.3rem;
-        font-family: 'Helvetica','Roboto', sans-serif;
+        font-family: 'Helvetica', 'Roboto', sans-serif;
     }
 
 }

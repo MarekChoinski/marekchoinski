@@ -15,7 +15,7 @@ type Props = {
 
 const Project: React.FC<Props> = props => {
 
-    const { 
+    const {
         children,
         title,
         technologies,
@@ -23,7 +23,7 @@ const Project: React.FC<Props> = props => {
         githubLink,
         demoLink,
         learnLink,
-        additionalClassName="",
+        additionalClassName = "",
     } = props;
 
     return (
@@ -47,7 +47,7 @@ const Project: React.FC<Props> = props => {
                         {
                             technologies.map(technology =>
                                 <div className="project__tag"
-                                key={technology}>
+                                    key={technology}>
                                     {technology}
                                 </div>
                             )
@@ -79,7 +79,7 @@ const Project: React.FC<Props> = props => {
                                 href={learnLink}
                                 role="button">
                                 {/* <ShowDemo /> LEARN MORE */}
-                    </a>
+                            </a>
                         }
                     </div>
                 </div>
@@ -88,7 +88,7 @@ const Project: React.FC<Props> = props => {
                 >
                     {showcase || <img src="https://via.placeholder.com/500" alt={`${title} visualisation`} />}
 
-                    
+
                 </div>
 
 
