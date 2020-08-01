@@ -5,6 +5,7 @@ type Props = {
     title: string,
     showcase?: React.ReactNode,
     additionalClassName?: string,
+    reversed?: boolean,
 };
 
 const TwoColumnGrid: React.FC<Props> = props => {
@@ -14,11 +15,12 @@ const TwoColumnGrid: React.FC<Props> = props => {
         title,
         showcase,
         additionalClassName = "",
+        reversed = false,
     } = props;
 
     return (
         <section
-            className={`twoColumnGrid ${additionalClassName}`}
+            className={`twoColumnGrid ${additionalClassName} ${reversed ? "reversed" : ""} `}
         >
             <div className="twoColumnGrid__container">
                 <div

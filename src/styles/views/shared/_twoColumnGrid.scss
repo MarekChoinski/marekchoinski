@@ -11,14 +11,79 @@
         .twoColumnGrid {
 
             &__showcase {
-                width: 40%;
+                width: 50%;
+
+                img {
+
+                    height: 50%;
+                }
+
+                @media screen and (max-width: $desktop-size) {
+                    width: 100%;
+                    display: block;
+
+                    img {
+                        height: 100%;
+                    }
+                }
             }
 
             &__info_container {
-                width: 60%;
+                width: 40%;
 
                 @media screen and (min-width: $big-size) {
                     margin-left: 200px;
+                }
+
+                @media screen and (max-width: $desktop-size) {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            &__title {
+                margin: 2.5rem 0;
+                font-weight: normal;
+                font-family: OldLondon;
+
+                font-size: 4rem;
+
+                @media screen and (max-width: $mobile-size) {
+                    font-size: 4.5rem;
+                }
+            }
+
+        }
+    }
+
+    &--blueOre {
+        color: white;
+
+        .twoColumnGrid {
+
+            &__showcase {
+                width: 50%;
+
+                img {
+                    height: 50%;
+                }
+
+                @media screen and (max-width: $desktop-size) {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            &__info_container {
+                width: 40%;
+
+                @media screen and (min-width: $big-size) {
+                    margin-left: 200px;
+                }
+
+                @media screen and (max-width: $desktop-size) {
+                    width: 100%;
+                    padding: 0;
                 }
             }
 
@@ -62,9 +127,27 @@
         }
     }
 
+
+
     // every odd section is reversed description with showcase
-    &:nth-child(2n+2) {
+    // &:nth-child(2n+2) {
+    //     .twoColumnGrid__container {
+    //         flex-direction: row-reverse;
+
+    //         @media screen and (max-width: $desktop-size) {
+    //             flex-direction: column-reverse;
+    //         }
+    //     }
+    // }
+
+    // first twoColumnGrid has no padding
+    &:first-child {
+        padding-top: 0;
+    }
+
+    &.reversed {
         .twoColumnGrid__container {
+            // color: red;
             flex-direction: row-reverse;
 
             @media screen and (max-width: $desktop-size) {
@@ -72,13 +155,6 @@
             }
         }
     }
-
-    // first twoColumnGrid has no padding
-    &:first-child {
-        padding-top: 0;
-    }
-
-
 
     &__description {
         line-height: 2;
@@ -99,7 +175,7 @@
     }
 
     &__showcase {
-        width: 50%;
+        width: 65%;
         display: flex;
         max-height: 100%;
         justify-content: center;
@@ -123,7 +199,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 50%;
+        width: 35%;
         // padding: 0 180px;
         padding: 0 50px;
 
