@@ -1,0 +1,28 @@
+.mineshowcase {
+    max-height: 80vh;
+    width: auto;
+
+    @media screen and (max-width: $desktop-size) {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.singleImageSection {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 170px 0;
+
+    // @media screen and (max-width: $mobile-size) {
+    //     width: 100%;
+    // }
+
+    &--logos {
+
+        padding: 50px 0;
+
+    }
+
+    &--comingSoon {}
+}
