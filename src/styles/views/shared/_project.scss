@@ -93,6 +93,22 @@
         }
     }
 
+    &--consquare_page {
+        @media screen and (max-width: $mobile-size) {
+            .project__title {
+                display: none;
+            }
+
+
+            .project__description {
+                margin-top: 2.5rem;
+
+            }
+        }
+    }
+
+
+
     &__description {
         line-height: 2;
         font-size: 1rem;

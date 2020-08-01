@@ -21,16 +21,28 @@
         background-position: center center;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @media screen and (max-width: $mobile-size) {
+            font-size: 5rem;
+        }
     }
 
     &__subtitle {
         font-size: 3rem;
         color: #ababab;
+
+        @media screen and (max-width: $mobile-size) {
+            font-size: 1.9rem;
+        }
     }
 
     &__pronunciation {
         font-size: 2.3rem;
         font-family: 'Helvetica', 'Roboto', sans-serif;
+
+        @media screen and (max-width: $mobile-size) {
+            font-size: 1.4rem;
+        }
     }
 
 }

@@ -34,13 +34,13 @@ const Consquare: React.FC = () => {
 
     return (
         <main className="consquarePage">
-            <Header />
+            {/* <Header /> */}
 
             <Hero />
 
             <Project
                 title="Consquare"
-                additionalClassName="project--consquare"
+                additionalClassName="project--consquare project--consquare_page"
                 technologies={["Unity", "Django", "Blender", "Python", "Agile"]}
                 showcase={<img src={ConsquareImage} alt="Consquare showcase" />}
                 key="consquare"
@@ -86,7 +86,7 @@ const Consquare: React.FC = () => {
             <img
                 src={WizardImage}
                 alt="Wizard"
-                className="singleImageSection"
+                className="singleImageSection singleImageSection--wizard"
             />
 
             <img

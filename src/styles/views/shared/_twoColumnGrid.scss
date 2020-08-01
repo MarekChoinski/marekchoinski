@@ -8,6 +8,11 @@
     &--innovativeProject {
         color: white;
 
+        @media screen and (max-width: $mobile-size) {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
         .twoColumnGrid {
 
             &__showcase {
@@ -23,7 +28,8 @@
                     display: block;
 
                     img {
-                        height: 100%;
+                        height: 70%;
+                        margin: auto;
                     }
                 }
             }
@@ -49,7 +55,7 @@
                 font-size: 4rem;
 
                 @media screen and (max-width: $mobile-size) {
-                    font-size: 4.5rem;
+                    font-size: 3rem;
                 }
             }
 
@@ -59,7 +65,13 @@
     &--blueOre {
         color: white;
 
+        @media screen and (max-width: $mobile-size) {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
         .twoColumnGrid {
+
 
             &__showcase {
                 width: 50%;
@@ -95,7 +107,7 @@
                 font-size: 4rem;
 
                 @media screen and (max-width: $mobile-size) {
-                    font-size: 4.5rem;
+                    font-size: 3rem;
                 }
             }
 
