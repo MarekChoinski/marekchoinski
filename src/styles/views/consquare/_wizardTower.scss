@@ -40,15 +40,15 @@
     }
 
     @media screen and (max-width: $mobile-size) {
-        padding: 70px 0;
+        padding: 0;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto 85vh auto auto;
+        grid-template-rows: 85vh auto auto auto auto;
         // gap: 1px 1px;
         row-gap: 70px;
         grid-template-areas:
+            "tower"
             "build"
             "fight"
-            "tower"
             "collect"
             "explore";
     }
@@ -59,39 +59,53 @@
 }
 
 .infoTile {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: min-content min-content;
+    gap: 0 30px;
+    grid-template-areas:
+        "icon title"
+        "icon description";
+    align-items: start;
+    justify-items: start;
 
     @media screen and (max-width: $mobile-size) {
-        margin: 30px 30px;
+        grid-template-columns: min-content auto;
+        grid-template-areas:
+            "icon        title"
+            "description description";
+        gap: 10px 30px;
+        margin: 0 30px;
     }
 
 
     &__icon {
         height: 130px;
+        grid-area: icon;
 
         @media screen and (max-width: $big-size) {
-            height: 90px;
+            height: 80px;
         }
     }
 
-    &__infoContainer {
-        line-height: 1.7;
-        margin-left: 30px;
-        padding: 0;
-    }
+
 
     &__title {
         font-family: OldLondon;
+        grid-area: title;
 
-        padding: 0;
+        padding: 0 0 2rem 0;
         font-size: 4rem;
 
         @media screen and (max-width: $mobile-size) {
-            font-size: 3rem;
+            font-size: 4rem;
         }
     }
 
     &__description {
+        grid-area: description;
+        // grid-area: title;
+        line-height: 1.7;
         padding: 0;
         margin-top: 0;
     }

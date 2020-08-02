@@ -16,6 +16,10 @@
 
     &--wizard {
         padding: 250px 0;
+
+        @media screen and (max-width: $mobile-size) {
+            padding: 0 0 100px 0;
+        }
     }
 
     &--logos {

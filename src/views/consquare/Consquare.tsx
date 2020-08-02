@@ -38,10 +38,7 @@ const Consquare: React.FC = () => {
         <main className="consquarePage">
             {/* <Header /> */}
 
-            <WizardTower />
-
             <Hero />
-
             <Project
                 title="Consquare"
                 additionalClassName="project--consquare project--consquare_page"
@@ -54,6 +51,9 @@ const Consquare: React.FC = () => {
                 Every model and UI was carefully crafted by me. Being under the wing of
                 Innovative Projects by Nokia, our team stood on the podium of their competition.
             </Project>
+
+            <WizardTower />
+
 
 
             <TwoColumnGrid
