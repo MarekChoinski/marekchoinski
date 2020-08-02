@@ -1,7 +1,10 @@
 import React from "react"
 import TowerVideo from "../../static/consquare/tower.mp4";
 
-import BuildIcon from "../../assets/images/consquare/backpack.png";
+import BuildIcon from "../../assets/images/consquare/tower.png";
+import FightIcon from "../../assets/images/consquare/sword.png";
+import CollectIcon from "../../assets/images/consquare/backpack.png";
+import ExploreIcon from "../../assets/images/consquare/map.png";
 
 const WizardTower: React.FC = () => {
 
@@ -24,9 +27,9 @@ const WizardTower: React.FC = () => {
                 </div>
             </div>
             <div className="infoTile infoTile--fight">
-                <img src={BuildIcon} alt="Build section icon" className="infoTile__icon" />
-                <header className="infoTile__title">Fight</header>
+                <img src={FightIcon} alt="Build section icon" className="infoTile__icon" />
                 <div className="infoTile__infoContainer">
+                    <header className="infoTile__title">Fight</header>
                     <p className="infoTile__description">
                         Gather your friends for your team and become the most powerful guild in the area.
                         Train your team's tactics on the terrifying creatures that live in the world of Consquare.
@@ -35,7 +38,7 @@ const WizardTower: React.FC = () => {
                 </div>
             </div>
             <div className="infoTile infoTile--collect">
-                <img src={BuildIcon} alt="Build section icon" className="infoTile__icon" />
+                <img src={CollectIcon} alt="Build section icon" className="infoTile__icon" />
                 <div className="infoTile__infoContainer">
                     <header className="infoTile__title">Collect</header>
                     <p className="infoTile__description">
@@ -46,13 +49,14 @@ const WizardTower: React.FC = () => {
                 </div>
             </div>
             <div className="infoTile infoTile--explore">
-                <img src={BuildIcon} alt="Build section icon" className="infoTile__icon" />
+                <img src={ExploreIcon} alt="Build section icon" className="infoTile__icon" />
                 <div className="infoTile__infoContainer">
                     <header className="infoTile__title">Explore</header>
                     <p className="infoTile__description">
                         The world of Consquare pretty resembles our world, but is steeped in enigmatic wizardy.
                         In vast corners of the world you will find many extraordinary characters that will change
-                        your outlook on life. The openness of our game world is limited only by the boundaries of our Earth. globe.
+                        your outlook on life. The openness of our game world is limited only by the boundaries of
+                        our Earth globe.
                 </p>
                 </div>
             </div>
