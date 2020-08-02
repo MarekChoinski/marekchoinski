@@ -11,6 +11,7 @@
         ".       .     explore";
 
     max-height: 100vh;
+    box-sizing: border-box;
 }
 
 .towerVideo {
@@ -21,9 +22,23 @@
 
     display: flex;
 
-    &__icon {}
+    &__icon {
+        height: 150px;
+    }
 
-    &__title {}
+    &__infoContainer {
+        line-height: 1.7;
+    }
+
+    &__title {
+        font-family: OldLondon;
+
+        font-size: 4rem;
+
+        @media screen and (max-width: $mobile-size) {
+            font-size: 3rem;
+        }
+    }
 
     &__description {}
 
