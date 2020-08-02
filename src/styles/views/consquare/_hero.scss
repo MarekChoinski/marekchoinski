@@ -3,11 +3,13 @@
     flex-direction: column;
     align-items: center;
 
-    // font-weight: bold;
     font-family: OldLondon;
 
-    padding: 200px 0 170px 0;
+    padding: 11rem 0 7rem 0;
 
+    @media screen and (max-width: $mobile-size) {
+        padding: 3rem 0 0rem 0;
+    }
 
     &__title {
         font-size: 11rem;

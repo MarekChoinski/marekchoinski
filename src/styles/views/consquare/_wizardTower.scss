@@ -1,0 +1,46 @@
+.wizardTower {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+        "build   .     ."
+        ".       tower fight"
+        "collect tower ."
+        ".       .     explore";
+
+    max-height: 100vh;
+}
+
+.towerVideo {
+    grid-area: tower;
+}
+
+.infoTile {
+
+    display: flex;
+
+    &__icon {}
+
+    &__title {}
+
+    &__description {}
+
+    &--build {
+        grid-area: build;
+    }
+
+    &--fight {
+        grid-area: fight;
+    }
+
+    &--collect {
+        grid-area: collect;
+    }
+
+    &--explore {
+        grid-area: explore;
+    }
+
+}

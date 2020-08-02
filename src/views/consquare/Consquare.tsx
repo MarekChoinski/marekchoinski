@@ -12,6 +12,8 @@ import ComingSoonImage from "../../assets/images/consquare/coming_soon.png";
 import BlueOreVideo from "../../static/consquare/blue_ore.mp4";
 import MineVideo from "../../static/consquare/mine.mp4";
 
+import WizardTower from './WizardTower';
+
 const BlueOreShowcase = () =>
     <video autoPlay loop muted playsInline width="100%" height="100%">
         <source src={BlueOreVideo} type="video/mp4" />
@@ -35,6 +37,8 @@ const Consquare: React.FC = () => {
     return (
         <main className="consquarePage">
             {/* <Header /> */}
+
+            <WizardTower />
 
             <Hero />
 

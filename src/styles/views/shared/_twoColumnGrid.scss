@@ -16,6 +16,8 @@
         .twoColumnGrid {
 
             &__showcase {
+                display: flex;
+                box-sizing: border-box;
                 width: 50%;
 
                 img {
@@ -24,12 +26,13 @@
                 }
 
                 @media screen and (max-width: $desktop-size) {
+                    padding: 7%;
                     width: 100%;
-                    display: block;
+                    // display: block;
 
                     img {
-                        height: 70%;
-                        margin: auto;
+                        // height: 10%;
+                        // margin: auto;
                     }
                 }
             }
