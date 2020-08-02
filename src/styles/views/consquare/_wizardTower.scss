@@ -10,9 +10,48 @@
         "collect tower ."
         ".       .     explore";
 
-    max-height: 150vh;
+    height: auto;
     box-sizing: border-box;
-    max-width: 1800px;
+    max-width: $big-size;
+    margin: 0 auto;
+
+    // padding: 100px 70px;
+    // @media screen and (min-width: $desktop-size) {
+    // }
+
+    // @media screen and (max-width: $big-size) {
+    //     // padding: 100px 10px;
+    //     grid-template-columns: 1fr 1.5fr 1fr;
+    // }
+
+    @media screen and (max-width: $big-size) {
+        padding: 100px 40px;
+        grid-template-columns: 1fr 1.5fr 1fr;
+    }
+
+    @media screen and (max-width: $desktop-size) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 80vh auto;
+        gap: 200px 100px;
+        grid-template-areas:
+            "build   fight"
+            "tower   tower"
+            "collect explore";
+    }
+
+    @media screen and (max-width: $mobile-size) {
+        padding: 70px 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 85vh auto auto;
+        // gap: 1px 1px;
+        row-gap: 70px;
+        grid-template-areas:
+            "build"
+            "fight"
+            "tower"
+            "collect"
+            "explore";
+    }
 }
 
 .towerVideo {
@@ -20,21 +59,31 @@
 }
 
 .infoTile {
-
     display: flex;
+
+    @media screen and (max-width: $mobile-size) {
+        margin: 30px 30px;
+    }
+
 
     &__icon {
         height: 130px;
+
+        @media screen and (max-width: $big-size) {
+            height: 90px;
+        }
     }
 
     &__infoContainer {
         line-height: 1.7;
         margin-left: 30px;
+        padding: 0;
     }
 
     &__title {
         font-family: OldLondon;
 
+        padding: 0;
         font-size: 4rem;
 
         @media screen and (max-width: $mobile-size) {
@@ -42,7 +91,10 @@
         }
     }
 
-    &__description {}
+    &__description {
+        padding: 0;
+        margin-top: 0;
+    }
 
     &--build {
         grid-area: build;
