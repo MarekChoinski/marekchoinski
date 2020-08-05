@@ -1,11 +1,14 @@
 import React from "react"
 import { Helmet } from "react-helmet";
 
-import { head } from '../../constans/head';
+import { IHead } from '../../constans/heads';
+type Props = {
+    headInformations: IHead,
+};
 
-const Head: React.FC = () => {
+const Head: React.FC<Props> = props => {
 
-    const { title, description, keywords, url, image } = head;
+    const { title, description, keywords, url, image } = props.headInformations;
     return (
         <Helmet>
             <title>{title}</title>

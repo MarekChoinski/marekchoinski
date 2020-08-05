@@ -13,6 +13,9 @@ import BlueOreVideo from "../../static/consquare/blue_ore.mp4";
 import MineVideo from "../../static/consquare/mine.mp4";
 
 import WizardTower from './WizardTower';
+import Head from "../mainpage/Head";
+
+import { consquareHead } from "../../constans/heads";
 
 const BlueOreShowcase = () =>
     <video autoPlay loop muted playsInline width="100%" height="100%">
@@ -36,6 +39,7 @@ const Consquare: React.FC = () => {
 
     return (
         <main className="consquarePage">
+            <Head headInformations={consquareHead} />
             {/* <Header /> */}
 
             <Hero />

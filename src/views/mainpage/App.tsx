@@ -8,6 +8,7 @@ import MoodifyVideo from "../../static/moodify.mp4";
 import MazeVideo from "../../static/mazesolver.mp4";
 import Head from "./Head";
 import PostujSlider from "./PostujSlider";
+import { mainPageHead } from '../../constans/heads';
 
 const ConsquareShowcase = () => <img src={ConsquareImage} alt="Consquare showcase" />;
 const MoodifyShowcase = () =>
@@ -28,7 +29,8 @@ const App: React.FC = () => {
 
     return (
         <main>
-            <Head />
+            <Head headInformations={mainPageHead} />
+
             <Header />
             <section className="all_projects_container" id="projects">
                 <Project
