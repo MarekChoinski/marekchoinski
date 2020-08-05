@@ -78,7 +78,7 @@ const Project: React.FC<Props> = props => {
                                 className="project__button"
                                 href={learnLink}
                                 role="button">
-                                {/* <ShowDemo /> LEARN MORE */}
+                                <ShowDemo /> LEARN MORE
                             </a>
                         }
                     </div>

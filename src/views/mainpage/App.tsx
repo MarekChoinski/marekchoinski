@@ -50,6 +50,7 @@ const App: React.FC = () => {
                     title="Consquare"
                     additionalClassName="project--consquare"
                     technologies={["Unity", "Django", "Blender", "Python", "Agile"]}
+                    learnLink="https://www.marekchoinski.com/consquare"
                     showcase={<ConsquareShowcase />}
                     key="consquare"
                 >
