@@ -21,7 +21,7 @@ const Header: React.FC = () => {
                         </a>
                     </li> */}
                     <li className="navbar__item">
-                        <a className="navbar__link" target="_blank" href="https://drive.google.com/file/d/1vq5BvRoZtTjgWqn1voBft27JbUgQaO11oqoLBGb7vaA/view">
+                        <a className="navbar__link" target="_blank" href="https://drive.google.com/file/d/18ViFq7b6cM7oGVwAWSbKlkEnR_RxcE85/view?usp=sharing">
                             resume
                         </a>
                     </li>
