@@ -1,0 +1,74 @@
+@use "@styles/variables" as *;
+
+.header {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+
+  @media screen and (max-width: $mobile_size) {
+    padding-top: 0;
+  }
+}
+
+.introduction {
+  display: block;
+  font-weight: 500;
+  box-sizing: border-box;
+  font-size: 2.5rem;
+
+  @media screen and (max-width: $mobile_size) {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: 20px;
+  }
+
+  span {
+    @media screen and (max-width: $mobile_size) {
+      display: block;
+    }
+  }
+}
+
+.greeter {
+  @media screen and (max-width: $mobile_size) {
+    font-size: 2rem;
+  }
+}
+
+.name {
+  color: $primary;
+}
+
+.navbar {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: inline-block;
+  margin: 0.7rem 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    border-bottom: 3px solid $primary;
+  }
+}

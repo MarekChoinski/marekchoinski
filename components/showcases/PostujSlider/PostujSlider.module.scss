@@ -1,0 +1,52 @@
+.slider {
+  position: relative;
+  width: 100%;
+  // NOTE: padding-bottom is hack for keeping aspect ratio of slider
+  // 2304x1351 is 100:59
+  // MORE: https://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css
+  padding-bottom: 59%;
+}
+
+.slide {
+  position: absolute;
+}
+
+.slideLight {
+  @extend .slide;
+  z-index: 3;
+  animation: fade 15s -0s infinite;
+}
+
+.slideBlue {
+  @extend .slide;
+  z-index: 2;
+  animation: fade 15s -5s infinite;
+}
+
+.slideDark {
+  @extend .slide;
+  z-index: 1;
+  animation: fade 15s -10s infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  53% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

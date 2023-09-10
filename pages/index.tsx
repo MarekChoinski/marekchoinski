@@ -1,95 +1,108 @@
-import Image from 'next/image'
-import styles from "../styles/pages/index.module.scss"
+import Image from "next/image";
+import styles from "@/styles/pages/index.module.scss";
+import { NextPage } from "next";
+import { Footer } from "@/components/Footer/Footer";
+import { Meta } from "@/components/Meta/Meta";
+import { Header } from "@/components/Header/Header";
+import { Project } from "@/components/Project/Project";
+import { homeMetaTags } from "@/constants/metaTags";
+import { PostujSlider } from "@/components/showcases/PostujSlider/PostujSlider";
+import { MazeShowcase } from "@/components/showcases/MazeShowcase/MazeShowcase";
+import { MoodifyShowcase } from "@/components/showcases/MoodifyShowcase/MoodifyShowcase";
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>aaaaaa
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main>
+      <Meta metaTags={homeMetaTags} />
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
+      <Header />
+      <section className={styles.allProjectsContainer} id="projects">
+        <Project
+          title="Moodify"
+          technologies={[
+            "Typescript",
+            "React",
+            "Redux",
+            "Styled-components",
+            "IndexedDB",
+            "REST API",
+            "Jest",
+            "Enzyme",
+          ]}
+          githubLink="https://github.com/MarekChoinski/Moodify"
+          demoLink="https://moodify.marekchoinski.com/"
+          showcase={<MoodifyShowcase />}
+          key="moodify"
         >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
+          The Progressive Web App written in React adjusts song choice depending
+          on user's mood. Eye-pleasant visual experience based on spotify REST
+          API changes the application's appearance according to vibrant color of
+          the album cover using Styled-components. API usage is optimised by
+          combining redux with IndexedDB caching.
+        </Project>
+        <Project
+          title="Consquare"
+          additionalClassName="project--consquare"
+          technologies={["Unity", "Django", "Blender", "Python", "Agile"]}
+          learnLink="https://www.marekchoinski.com/consquare"
+          showcase={
+            <img src="/images/consquare.jpg" alt="Consquare showcase" />
+          }
+          key="consquare"
         >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
+          GPS-based, procedurally structure generated, PokemonGo-alike
+          multiplayer mobile game, using Unity and Django, glowed up with
+          astonishingly magic graphics. Every model and UI was carefully crafted
+          by me. Being under the wing of Innovative Projects by Nokia, our team
+          stood on the podium of their competition.
+        </Project>
+        <Project
+          title="Postuj"
+          technologies={[
+            "Typescript",
+            "React",
+            "Redux",
+            "Firebase",
+            "SCSS",
+            "Bootstrap",
+            "Context-API",
+            "Jest",
+            "Enzyme",
+          ]}
+          githubLink="https://github.com/MarekChoinski/Postuj"
+          demoLink="https://postuj.marekchoinski.com/"
+          showcase={<PostujSlider />}
+          key="postuj"
         >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
+          Social community, where anyone can set up an account and start
+          creating posts, comment and follow other users with interesting
+          content. Typescript frontend stuffed with React, Redux and Context API
+          is powered safely with the Firebase framework.
+        </Project>
+        <Project
+          title="Real-time maze solver"
+          additionalClassName="project--mazesolver"
+          technologies={[
+            "Open.cv",
+            "OOP",
+            "Babel",
+            "SCSS",
+            "Algorithms",
+            "WebRTC",
+          ]}
+          showcase={<MazeShowcase />}
+          githubLink="https://github.com/MarekChoinski/real-time-maze-solver"
+          demoLink="https://mazesolver.marekchoinski.com/"
+          key="mazesolver"
         >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          The Progressive Web App with real-time camera solves handwritten
+          labyrinths using Opencv.js, WebRTC and breadth-first search of the
+          graph. Written carefully using OOP and tested with Jest.
+        </Project>
+      </section>
+      <Footer />
     </main>
-  )
-}
+  );
+};
+
+export default Home;

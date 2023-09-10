@@ -1,0 +1,50 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 11rem 0 7rem 0;
+
+  font-family: OldLondon;
+
+  @media screen and (max-width: $mobile-size) {
+    padding: 3rem 0 0rem 0;
+  }
+}
+
+.title {
+  font-size: 11rem;
+  margin: 2rem 0;
+
+  /* Disable poor font smoothing on firefox macOs */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Background texture */
+  background-image: url("../assets/images/consquare/gold_texture.jpg");
+  /* Change URL to texture file name */
+  background-repeat: repeat;
+  background-position: center center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media screen and (max-width: $mobile-size) {
+    font-size: 5rem;
+  }
+}
+
+.subtitle {
+  font-size: 3rem;
+  color: #ababab;
+
+  @media screen and (max-width: $mobile-size) {
+    font-size: 1.9rem;
+  }
+}
+
+.pronunciation {
+  font-size: 2.3rem;
+  font-family: "Helvetica", "Roboto", sans-serif;
+
+  @media screen and (max-width: $mobile-size) {
+    font-size: 1.4rem;
+  }
+}

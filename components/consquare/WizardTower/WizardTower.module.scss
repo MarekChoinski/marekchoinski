@@ -1,0 +1,116 @@
+.wizardTower {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 50vh 50vh 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    "build   .     ."
+    ".       tower fight"
+    "collect tower ."
+    ".       .     explore";
+
+  height: auto;
+  box-sizing: border-box;
+  max-width: $big-size;
+  margin: 0 auto;
+
+  @media screen and (max-width: $big-size) {
+    padding: 100px 40px;
+    grid-template-columns: 1fr 1.5fr 1fr;
+  }
+
+  @media screen and (max-width: $desktop-size) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 80vh auto;
+    gap: 200px 100px;
+    grid-template-areas:
+      "build   fight"
+      "tower   tower"
+      "collect explore";
+  }
+
+  @media screen and (max-width: $mobile-size) {
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 85vh auto auto auto auto;
+    // gap: 1px 1px;
+    row-gap: 70px;
+    grid-template-areas:
+      "tower"
+      "build"
+      "fight"
+      "collect"
+      "explore";
+  }
+}
+
+.towerVideo {
+  grid-area: tower;
+  overflow: hidden;
+}
+
+.infoTile {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: min-content min-content;
+  gap: 0 30px;
+  grid-template-areas:
+    "icon title"
+    "icon description";
+  align-items: start;
+  justify-items: start;
+
+  @media screen and (max-width: $mobile-size) {
+    grid-template-columns: min-content auto;
+    grid-template-areas:
+      "icon        title"
+      "description description";
+    gap: 10px 30px;
+    margin: 0 30px;
+  }
+}
+
+&__icon {
+  height: 130px;
+  grid-area: icon;
+
+  @media screen and (max-width: $big-size) {
+    height: 80px;
+  }
+}
+
+.title {
+  font-family: OldLondon;
+  grid-area: title;
+
+  padding: 0 0 2rem 0;
+  font-size: 4rem;
+
+  @media screen and (max-width: $mobile-size) {
+    font-size: 4rem;
+  }
+}
+
+.description {
+  grid-area: description;
+  line-height: 1.7;
+  padding: 0;
+  margin-top: 0;
+}
+
+.build {
+  grid-area: build;
+}
+
+.fight {
+  grid-area: fight;
+}
+
+.collect {
+  grid-area: collect;
+}
+
+.explore {
+  grid-area: explore;
+}

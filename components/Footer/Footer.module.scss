@@ -1,0 +1,23 @@
+@use "@styles/variables" as *;
+
+.footer {
+  height: auto;
+  background-color: $backgroundColor;
+  width: 100%;
+  color: $fontColor;
+  font-family: monospace;
+  font-weight: normal;
+  font-size: 1rem;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  font-size: 1rem;
+
+  @media screen and (min-width: $desktop-size) {
+    text-align: center;
+    margin-top: 100px;
+  }
+}
+
+.link {
+  color: $primary;
+}
