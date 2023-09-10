@@ -1,6 +1,8 @@
 import classnames from "classnames";
 import React, { ReactElement } from "react";
 import styles from "./Project.module.scss";
+import { ShowCode } from "../icons/ShowCode";
+import { ShowDemo } from "../icons/ShowDemo";
 // import ShowDemo from '../../assets/icons/
 // import ShowCode from '../assets/icons/showCode.svg';
 
@@ -11,11 +13,11 @@ export enum ProjectVariant {
   ConsquarePage = "CONSQUARE_PAGE",
 }
 
-interface ProjectProps {
-  children: React.ReactNode;
+export interface ProjectProps {
   title: string;
+  description: string;
   technologies: string[];
-  showcase?: React.ReactNode;
+  showcase: React.ReactNode;
   githubLink?: string;
   demoLink?: string;
   learnLink?: string;
@@ -23,8 +25,8 @@ interface ProjectProps {
 }
 
 export const Project = ({
-  children,
   title,
+  description,
   technologies,
   showcase,
   githubLink,
@@ -42,8 +44,8 @@ export const Project = ({
     <div className={styles.container}>
       <div className={styles.infoContainer}>
         <h1 className={styles.title}>{title}</h1>
-        <p className={styles.description}>{children}</p>
-        <div className={styles.tagContainer}>
+        <p className={styles.description}>{description}</p>
+        <div className={styles.tagsContainer}>
           {technologies.map((technology) => (
             <div className={styles.tag} key={technology}>
               {technology}
@@ -53,17 +55,17 @@ export const Project = ({
         <div className={styles.buttonContainer}>
           {githubLink && (
             <a className={styles.button} href={githubLink} role="button">
-              {/* <ShowCode /> SHOW CODE */}
+              <ShowCode /> SHOW CODE
             </a>
           )}
           {demoLink && (
             <a className={styles.button} href={demoLink} role="button">
-              {/* <ShowDemo /> SHOW DEMO */}
+              <ShowDemo /> SHOW DEMO
             </a>
           )}
           {learnLink && (
             <a className={styles.button} href={learnLink} role="button">
-              {/* <ShowDemo /> LEARN MORE */}
+              <ShowDemo /> LEARN MORE
             </a>
           )}
         </div>
