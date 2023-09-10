@@ -11,17 +11,6 @@
     padding: 150px 70px;
   }
 
-  // every odd section is reversed description with showcase
-  &:nth-child(2n + 2) {
-    .project__container {
-      flex-direction: row-reverse;
-
-      @media screen and (max-width: $desktop-size) {
-        flex-direction: column-reverse;
-      }
-    }
-  }
-
   // first project has no padding
   &:first-child {
     padding-top: 0;
@@ -177,6 +166,16 @@
   @media screen and (max-width: $desktop-size) {
     width: 100%;
     padding: 0;
+  }
+}
+
+.reversed {
+  .container {
+    flex-direction: row-reverse;
+
+    @media screen and (max-width: $desktop-size) {
+      flex-direction: column-reverse;
+    }
   }
 }
 

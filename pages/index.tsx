@@ -24,6 +24,7 @@ const Home: NextPage = () => {
             githubLink={project.githubLink}
             showcase={project.showcase}
             variant={project.variant}
+            reversed={project.reversed}
           />
         ))}
       </section>

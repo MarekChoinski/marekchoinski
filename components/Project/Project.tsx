@@ -1,10 +1,8 @@
 import classnames from "classnames";
-import React, { ReactElement } from "react";
+import React from "react";
 import styles from "./Project.module.scss";
 import { ShowCode } from "../icons/ShowCode";
 import { ShowDemo } from "../icons/ShowDemo";
-// import ShowDemo from '../../assets/icons/
-// import ShowCode from '../assets/icons/showCode.svg';
 
 export enum ProjectVariant {
   Default = "DEFAULT",
@@ -22,6 +20,7 @@ export interface ProjectProps {
   demoLink?: string;
   learnLink?: string;
   variant?: ProjectVariant;
+  reversed?: boolean;
 }
 
 export const Project = ({
@@ -33,12 +32,14 @@ export const Project = ({
   demoLink,
   learnLink,
   variant = ProjectVariant.Default,
+  reversed = false,
 }: ProjectProps) => (
   <section
     className={classnames(styles.project, {
       [styles.mazeSolver]: variant === ProjectVariant.MazeSolver,
       [styles.consquare]: variant === ProjectVariant.Consquare,
       [styles.consquarePage]: variant === ProjectVariant.ConsquarePage,
+      [styles.reversed]: reversed,
     })}
   >
     <div className={styles.container}>

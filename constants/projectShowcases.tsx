@@ -32,6 +32,7 @@ export const projectShowcases: Showcase[] = [
     technologies: ["Unity", "Django", "Blender", "Python", "Agile"],
     learnLink: "https://www.marekchoinski.com/consquare",
     showcase: <img src="/images/consquare.jpg" alt="Consquare showcase" />,
+    reversed: true,
     description:
       "GPS-based, procedurally structure generated, PokemonGo-alike multiplayer mobile game, using Unity and Django, glowed up with astonishingly magic graphics. Every model and UI was carefully crafted by me. Being under the wing of Innovative Projects by Nokia, our team stood on the podium of their competition.",
   },
@@ -51,8 +52,8 @@ export const projectShowcases: Showcase[] = [
     githubLink: "https://github.com/MarekChoinski/Postuj",
     demoLink: "https://postuj.marekchoinski.com/",
     showcase: <PostujSlider />,
-    description: `
-  Social community, where anyone can set up an account and start creating posts, comment and follow other users with interesting content. Typescript frontend stuffed with React, Redux and Context API is powered safely with the Firebase framework.`,
+    description:
+      "Social community, where anyone can set up an account and start creating posts, comment and follow other users with interesting content. Typescript frontend stuffed with React, Redux and Context API is powered safely with the Firebase framework.",
   },
   {
     title: "Real-time maze solver",
@@ -61,7 +62,8 @@ export const projectShowcases: Showcase[] = [
     githubLink: "https://github.com/MarekChoinski/real-time-maze-solver",
     demoLink: "https://mazesolver.marekchoinski.com/",
     showcase: <MazeShowcase />,
-    description: `
-  Social community, where anyone can set up an account and start creating posts, comment and follow other users with interesting content. Typescript frontend stuffed with React, Redux and Context API is powered safely with the Firebase framework.`,
+    reversed: true,
+    description:
+      "The Progressive Web App with real-time camera solves handwritten labyrinths using Opencv.js, WebRTC and breadth-first search of the graph. Written carefully using OOP and tested with Jest.",
   },
 ];
