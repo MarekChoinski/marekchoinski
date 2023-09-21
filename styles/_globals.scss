@@ -1,17 +1,27 @@
 @font-face {
-    font-family: 'OldLondon';
-    src: local('OldLondon'),
-        url(../assets/fonts/OldLondon.ttf) format('truetype');
+  font-family: "OldLondon";
+  src:
+    local("OldLondon"),
+    url(../assets/fonts/OldLondon.ttf) format("truetype");
 }
 
 html,
-body,
-#___gatsby,
-#gatsby-focus-wrapper {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: 'Helvetica', 'Roboto', sans-serif;
+body
+// body > div:first-child,
+// div#__next,
+// div#__next > div
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 100dvh;
+  min-width: 100vw;
+  font-family: "Helvetica", "Roboto", sans-serif;
+}
+
+#__next {
+  position: absolute;
+  inset: 0;
 }

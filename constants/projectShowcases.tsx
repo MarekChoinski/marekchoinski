@@ -5,7 +5,7 @@ import ConsquareImage from "../../assets/images/consquare.jpg";
 import { ProjectProps, ProjectVariant } from "@/components/Project/Project";
 import { MazeShowcase } from "@/components/showcases/MazeShowcase/MazeShowcase";
 
-type Showcase = ProjectProps;
+export type Showcase = ProjectProps;
 
 export const projectShowcases: Showcase[] = [
   {
@@ -30,7 +30,7 @@ export const projectShowcases: Showcase[] = [
     title: "Consquare",
     variant: ProjectVariant.Consquare,
     technologies: ["Unity", "Django", "Blender", "Python", "Agile"],
-    learnLink: "https://www.marekchoinski.com/consquare",
+    learnLink: "/consquare",
     showcase: <img src="/images/consquare.jpg" alt="Consquare showcase" />,
     reversed: true,
     description:

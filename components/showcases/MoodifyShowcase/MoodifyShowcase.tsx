@@ -1,5 +1,4 @@
 import React from "react";
-// import MoodifyVideo from "../../static/moodify.mp4";
 
 export const MoodifyShowcase = () => (
   <div style={{ position: "relative", width: "100%", height: "100%" }}>

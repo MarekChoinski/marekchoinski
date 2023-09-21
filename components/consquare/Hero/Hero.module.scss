@@ -1,3 +1,5 @@
+@use "@styles/variables" as *;
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -19,7 +21,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Background texture */
-  background-image: url("../assets/images/consquare/gold_texture.jpg");
+  background-image: url("/images/consquare/gold_texture.jpg");
   /* Change URL to texture file name */
   background-repeat: repeat;
   background-position: center center;

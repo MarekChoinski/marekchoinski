@@ -1,0 +1,18 @@
+@use "@styles/variables" as *;
+
+.wrapper {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.mine {
+  max-height: 80vh;
+  width: 100%;
+
+  @media screen and (max-width: $desktop-size) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

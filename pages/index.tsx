@@ -6,10 +6,17 @@ import { Header } from "@/components/Header/Header";
 import { Project } from "@/components/Project/Project";
 import { homeMetaTags } from "@/constants/metaTags";
 import { projectShowcases } from "@/constants/projectShowcases";
+import { Rubik } from "next/font/google";
+
+const rubik = Rubik({
+  subsets: ["latin"],
+  variable: "--font-rubik",
+  display: "swap",
+});
 
 const Home: NextPage = () => {
   return (
-    <main>
+    <main className={rubik.className}>
       <Meta metaTags={homeMetaTags} />
 
       <Header />
@@ -22,6 +29,7 @@ const Home: NextPage = () => {
             description={project.description}
             demoLink={project.demoLink}
             githubLink={project.githubLink}
+            learnLink={project.learnLink}
             showcase={project.showcase}
             variant={project.variant}
             reversed={project.reversed}

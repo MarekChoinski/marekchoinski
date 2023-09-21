@@ -1,3 +1,5 @@
+@use "@styles/variables" as *;
+
 .wizardTower {
   color: white;
   display: grid;
@@ -71,7 +73,7 @@
   }
 }
 
-&__icon {
+.icon {
   height: 130px;
   grid-area: icon;
 
@@ -100,17 +102,21 @@
 }
 
 .build {
+  @extend .infoTile;
   grid-area: build;
 }
 
 .fight {
+  @extend .infoTile;
   grid-area: fight;
 }
 
 .collect {
+  @extend .infoTile;
   grid-area: collect;
 }
 
 .explore {
+  @extend .infoTile;
   grid-area: explore;
 }
