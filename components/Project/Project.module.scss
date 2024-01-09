@@ -331,3 +331,36 @@
     }
   }
 }
+
+.openBaltica {
+  background-color: black;
+  color: white;
+  padding: 100px 0;
+
+  @media screen and (max-width: $mobile-size) {
+    padding: 100px 0px;
+  }
+
+  .title {
+    margin: 2.5rem 0;
+    font-weight: normal;
+
+    font-size: 4rem;
+
+    @media screen and (max-width: $mobile-size) {
+      font-size: 4.5rem;
+    }
+  }
+
+  .infoContainer {
+    @media screen and (min-width: $big-size) {
+      margin-left: 200px;
+    }
+  }
+
+  img {
+    @media screen and (min-width: $desktop-size) {
+      height: 70%;
+    }
+  }
+}

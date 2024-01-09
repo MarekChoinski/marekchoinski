@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Header.module.scss";
+import Link from "next/link";
 
 export const Header = () => (
   <header className={styles.header}>
@@ -22,6 +23,11 @@ export const Header = () => (
           >
             resume
           </a>
+        </li>
+        <li className={styles.item}>
+          <Link className={styles.link} href="/blog">
+            blog
+          </Link>
         </li>
       </ul>
       <ul className={styles.links}>

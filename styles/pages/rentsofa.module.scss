@@ -1,0 +1,108 @@
+@use "@styles/variables" as *;
+
+$textSpacing: 80px;
+
+.page {
+  font-family: var(--font-montserrat);
+  position: relative;
+  line-height: 2;
+}
+
+.header {
+  font-weight: normal;
+  color: $rentsofaColor;
+  margin: 0;
+}
+
+.info {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.backgroundImage {
+  background-position: "center center";
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  filter: blur(3px);
+  filter: brightness(0.8) blur(3px);
+}
+
+.logo {
+  width: 300px;
+  margin: 0 auto;
+  position: absolute;
+  top: 30vh;
+  border-radius: 16px;
+  left: calc(50vw - 150px);
+  z-index: 1;
+  box-shadow: 0px 0px 24px 16px rgb(233, 233, 233);
+}
+
+.description {
+  max-width: 470px;
+  margin: 30px auto;
+  line-height: 2;
+  font-size: 20px;
+  text-align: center;
+}
+
+.twoColumns {
+  display: flex;
+  width: 90%;
+  margin: 150px auto;
+
+  p {
+    padding: 0 $textSpacing 0 0;
+  }
+
+  &:nth-child(2n + 1) {
+    flex-direction: row-reverse;
+
+    p {
+      padding: 0 0 0 $textSpacing;
+    }
+
+    h2 {
+      padding-left: $textSpacing;
+    }
+  }
+}
+
+.text {
+  // padding: 0px 30px;
+}
+
+.map {
+  width: auto;
+  height: 70vh;
+  margin: 0 auto;
+  display: block;
+}
+
+.designDescription {
+  max-width: 80vw;
+  margin: 20px auto;
+}
+
+.outroLogo {
+  width: 300px;
+  margin: 0 auto 50px auto;
+  display: block;
+}
+
+.outro {
+  font-size: 16px;
+  margin: 0 auto;
+  font-family: monospace;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.linkRentsofa {
+  color: $rentsofaColor;
+}
+
+.outroLink {
+  color: $fontColor;
+}

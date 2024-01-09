@@ -9,6 +9,7 @@ import { Hero } from "@/components/consquare/Hero/Hero";
 import { WizardTower } from "@/components/consquare/WizardTower/WizardTower";
 import { MineShowcase } from "@/components/showcases/MineShowcase/MineShowcase";
 import { consquareShowcases as showcases } from "@/constants/consquareShowcases";
+import { Navbar } from "@/components/Navbar/Navbar";
 
 const Consquare: NextPage = () => {
   const consquareProject: Showcase | undefined = useMemo(
@@ -22,7 +23,7 @@ const Consquare: NextPage = () => {
   return (
     <main className={styles.consquarePage}>
       <Meta metaTags={consquareMetaTags} />
-
+      <Navbar />
       <Hero />
       {consquareProject && (
         <Project

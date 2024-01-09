@@ -1,13 +1,53 @@
 import React from "react";
 import { MoodifyShowcase } from "../components/showcases/MoodifyShowcase/MoodifyShowcase";
 import { PostujSlider } from "../components/showcases/PostujSlider/PostujSlider";
-import ConsquareImage from "../../assets/images/consquare.jpg";
 import { ProjectProps, ProjectVariant } from "@/components/Project/Project";
 import { MazeShowcase } from "@/components/showcases/MazeShowcase/MazeShowcase";
 
 export type Showcase = ProjectProps;
 
 export const projectShowcases: Showcase[] = [
+  {
+    title: "Rentsofa",
+    titleShowcase: (
+      <img
+        style={{ width: "240px", marginBottom: "20px" }}
+        src="/images/rentsofa/logo.png"
+      />
+    ),
+    technologies: [
+      "Typescript",
+      "Next.js",
+      "Nest.js",
+      "React",
+      "AWS",
+      "Docker",
+    ],
+    demoLink: "https://moodify.marekchoinski.com/",
+    showcase: <img src="/images/rentsofa/map.png" />,
+    learnLink: "/rentsofa",
+    description:
+      "Social rental platform redefines property management and connects people with the same passions to find the best home. Highly advanced microservices platform with hundreds of users daily.",
+  },
+  {
+    title: "OpenBaltica",
+    technologies: [
+      "Typescript",
+      "Web3",
+      "Hardhat",
+      "ether.js",
+      "Next.js",
+      "Pinata",
+      "Moralis",
+    ],
+    reversed: true,
+    githubLink: "https://github.com/MarekChoinski/OpenBaltica",
+    // demoLink: "https://moodify.marekchoinski.com/",
+    showcase: <img src="/images/coins.png" />,
+    variant: ProjectVariant.OpenBaltica,
+    description:
+      "The Progressive Web App written in React adjusts song choice depending on user's mood. Eye-pleasant visual experience based on spotify REST API changes the application's appearance according to vibrant color of the album cover using Styled-components. API usage is optimised by combining redux with IndexedDB caching.",
+  },
   {
     title: "Moodify",
     technologies: [
@@ -49,8 +89,6 @@ export const projectShowcases: Showcase[] = [
       "Jest",
       "Enzyme",
     ],
-    githubLink: "https://github.com/MarekChoinski/Postuj",
-    demoLink: "https://postuj.marekchoinski.com/",
     showcase: <PostujSlider />,
     description:
       "Social community, where anyone can set up an account and start creating posts, comment and follow other users with interesting content. Typescript frontend stuffed with React, Redux and Context API is powered safely with the Firebase framework.",

@@ -33,6 +33,7 @@ const Home: NextPage = () => {
             showcase={project.showcase}
             variant={project.variant}
             reversed={project.reversed}
+            titleShowcase={project.titleShowcase}
           />
         ))}
       </section>

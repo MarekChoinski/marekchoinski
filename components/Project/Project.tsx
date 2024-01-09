@@ -7,6 +7,7 @@ import { ShowDemo } from "../icons/ShowDemo";
 export enum ProjectVariant {
   Default = "DEFAULT",
   MazeSolver = "MAZE_SOLVER",
+  OpenBaltica = "OPENBALTICA",
   Consquare = "CONSQUARE",
   ConsquarePage = "CONSQUARE_PAGE",
   InnovativeProject = "INNOVATIVE_PROJECT",
@@ -23,6 +24,7 @@ export interface ProjectProps {
   learnLink?: string;
   variant?: ProjectVariant;
   reversed?: boolean;
+  titleShowcase?: React.ReactNode;
 }
 
 export const Project = ({
@@ -33,6 +35,7 @@ export const Project = ({
   githubLink,
   demoLink,
   learnLink,
+  titleShowcase,
   variant = ProjectVariant.Default,
   reversed = false,
 }: ProjectProps) => (
@@ -43,12 +46,20 @@ export const Project = ({
       [styles.consquarePage]: variant === ProjectVariant.ConsquarePage,
       [styles.innovativeProject]: variant === ProjectVariant.InnovativeProject,
       [styles.blueOre]: variant === ProjectVariant.BlueOre,
+      [styles.openBaltica]: variant === ProjectVariant.OpenBaltica,
       [styles.reversed]: reversed,
     })}
   >
     <div className={styles.container}>
       <div className={styles.infoContainer}>
-        <h1 className={styles.title}>{title}</h1>
+        {titleShowcase ?? (
+          <h1
+            className={styles.title}
+            onClick={() => console.log(titleShowcase)}
+          >
+            {title}
+          </h1>
+        )}
         <p className={styles.description}>{description}</p>
         {technologies?.length ? (
           <div className={styles.tagsContainer}>
